@@ -1,0 +1,545 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="font/font_8cnzodx1rzxjq0k9/iconfont.css">
+<link rel="stylesheet" type="text/css" href="font/font2/iconfont.css">
+<link rel="stylesheet" type="text/css" href="font/font3/iconfont.css">
+<style>
+body,html{width:100%;height:100%;font-family:Microsoft Yahei;}
+img{border:0;display:block;}
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,body,input,dd{margin:0;padding:0;}
+li{list-style:none;}
+*{margin:0;padding:0;}
+a{text-decoration:none;}
+em,i,b,strong{font-style:normal;font-weight:normal;}
+.clear:after{content:"";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
+.left{float:left;}
+.right{float:right;}
+/*------------------------------------------------以上为重置样式*/
+.headertop{height:25px;width:100%;border-bottom:1px solid #e5e5e5;background-color:#f2f2f2;font-size:11px;}
+.top{width:1190px;margin:0 auto;}
+.header .u1{float:right;/*margin-right:10px;*/}
+.header .u1 li{float:left;/*background:url(../img/images/首页_03.png) no-repeat 70px 5px;*/}
+.header .u1 a{display:block;height:25px;text-align:center;line-height:25px;color:#666;}
+.header .u1 .l1 a{width:100px;color:#e40202;}
+.header .u1 .l2 a{width:60px;}
+.header .u1 .l2 a:hover{color:#e40202;}
+.header .u1 .l3 a{width:80px;}
+.header .u1 .l4 a{width:100px;}
+.header .u1 .l4{position:relative;}
+#serve a:hover{color:#e40202;}
+.header .u1 .l5 a{width:100px;}
+.header .u1 .l5{position:relative;}
+.header .u1 .l7 a{width:80px;}
+.header .u1 .l6 a{width:150px;font-size:14px;color:#666;background:url(../img/images/首页_09.png) no-repeat 5px 5px;}
+/*.header .u1 li:hover{background:#e8e8e8;}*/
+.sj{width:0;height:0;border:5px solid #eeeeee;border-top-color:#696969;float:right;margin:10px 10px 0 -10px;}
+#u2 li{float:left;margin-left:20px;}
+#u2 li a{display:block;text-decoration: none;color:#666;line-height:25px;}
+#u2 li a i{color:#c50101;}
+#u2 li a:hover{color:#e40202;}
+#Lef2{position:relative;z-index:10;}
+#Lef3{position:relative;z-index:10;}
+
+#weiChatCode{position:absolute;width:120px;height:160px;background:#f2f2f2;display:none;}
+#weiChatCode img{width:100px;height:100px;margin:15px 10px 5px 10px;}
+#weiChatCode span{display:block;text-align:center;font-size:10px;width:100%;}
+
+#teleCode{position:absolute;width:120px;height:160px;background:#f2f2f2;display:none;}
+#teleCode img{width:100px;height:100px;margin:15px 10px 5px 10px;}
+#teleCode span{display:block;text-align:center;font-size:10px;width:100%;}
+#serve{width:100px;height:130px;background:#f2f2f2;position:absolute;z-index:10;display:none;}
+#serve a{line-height:16px;color:#666;}
+#shoppingBord{width:200px;height:100px;position:absolute;background:#f2f2f2;display:none;}
+#shoppingBord div{width:100%;text-align:center;margin:10px 0 0 0;}
+#shoppingBord a:hover{color:red;}
+
+
+/*---------------------以上为头部样式------------------------*/
+.headerlogo{height:77px;width:100%;border-bottom:1px solid #f7f5f6;}
+.logo{height:77px;width:540px;}
+.logo a,p{float:left;font-size:18px;}
+.logo a img{border:none;height:70px;}
+.mid{width:1190px;margin:0 auto;}
+.logo a{margin-top:6px;}
+.logo p{margin:41px 0 0 14px;}
+
+
+.search{width:400px;height:77px;position:relative;float:left;}
+.logo,.search{float:left;overflow:hidden;}
+.search input{float:left;font-size:17px;}
+
+.search input[type="text"]{font-size:16px;width:272px;height:26px;border:2px solid #d5d5d5;border-right:none;margin-top:16px;outline:none;}
+.search input[type="submit"]{width:65px;height:28px;border:none;background-color:red;color:#fff;margin-top:16px;}
+form{overflow:hidden;}
+.search ul{position:absolute;left:40px;top:50px;font-size:11px;}
+.search p{font-size:11px;position:absolute;left:0px;top:53px;}
+.search ul a{display:block;padding:0 4px;color:#888888;}
+.search ul a:hover{color:#F00;}
+/*---------------------以上为搜索栏----------------------*/
+
+#teleId{float:left;}
+#teleId a{color:#e40202;font-size:16px;line-height:76px;}
+#teleId i{color:#e40202;font-size:22px;}
+
+
+
+/*----------------------------以上为客服和电话----------*/
+.headerbot{height:35px;width:100%;background:#e40202;}
+.nav .b1 h4 a{color:#fff;display:/*inline-*/block;padding-top:5px;height:30px;width:190px;text-align:center;background:#b9363c;}
+.nav{width:1190px;margin:0 auto;position:relative;}
+.nav .b2 li{float:left;line-height:35px;background:url(../img/images/首页_0100.png) no-repeat 0px 10px;}
+.b2 li a{display:block;height:35px;padding:0px 17px 0 13px;color:#fff;}
+.nav .b1,.b2{float:left;}
+/*.b2 .l1{height:35px;width:66px;background:#333;}*/
+.nav .b2 a:hover{/*color:#FF0;*/background:rgba(0,0,0,.3);}
+.b3 li{float:left;}
+.b3 a{display:block;height:27px;padding:8px 12px 0 0;font-size:15px;color:#fff;}
+.b3 ul{margin-left:20px;}
+.b3 tip{float:right;}
+
+
+.nav .box2{position:absolute;z-index:10;top:35px;width:190px;height:386px;background:#1f1909;}
+.nav .subnav li a{display:block;width:190px;height:43px;text-align:center;line-height:43px;color:#fff;}
+.nav .subnav li a:hover{background:#373327;}
+/*.nav .b1 h4 a:hover{color:;}*/
+
+.nav .b1:hover .box2{display:block;}
+.nav .b3 .l3{position:relative;}
+.nav .b3 .l3 .tipright{position:relative;top:;left:-80px;display:none;}
+.nav .b3 .l3:hover .tipright{display:block;}
+.nav .b3 li a:hover{color:#FF0;}
+
+    ul,li{
+        list-style-type:none;
+    }
+    #wrap{
+        width:1370px;
+        height: 430px;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
+    ul#slide{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 9999px;
+    }
+    #slide li{
+        float: left;
+        width: 1370px;
+        height: 430px;
+        z-index:-10;
+    }
+    #prev,#next{
+        width:70px;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        font-size: 40px;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 120px;
+        text-align: center;
+        text-decoration: none;
+        display: none;
+    }
+    #wrap:hover #prev,#wrap:hover #next{
+        display: block;
+    }
+    #prev{
+        left: 0;
+    }
+    #next{
+        right: 0;
+    }
+    #list{
+        position: absolute;
+        bottom: 10px;
+        width:250px;
+        right:40%;
+    }
+    #list li{
+        width: 40px;
+        height: 4px;
+        background:rgba(0,0,0,.3);
+        border-radius: 2px;
+        float:left;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    #list li.active{
+        background-color:rgba(255,255,255,.8);
+    }
+    #slide li img{
+
+        width:1370px;
+        height:430px;
+    }
+    #bannerFloatImg{position:absolute;top:0px;right:140px;z-index:20;}
+    #bannerFloatImg li{width:200px;height:140px;margin:0 0 5px 0;transition:.5s linear;}
+    #bannerFloatImg li img{width:200px;height:140px;}
+    #bannerFloatImg li:hover{transform: translateX(-20px);}
+
+</style>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+	
+$(function(){
+
+	$("#Lef2").mouseenter(function(){
+		$("#weiChatCode").slideDown(200);	
+	});
+	$("#Lef2").mouseleave(function(){
+		$("#weiChatCode").slideUp(200);	
+	});
+	
+	$("#Lef3").mouseenter(function(){
+		$("#teleCode").slideDown(200);	
+	});
+	$("#Lef3").mouseleave(function(){
+		$("#teleCode").slideUp(200);	
+	});
+	$(".l4").mouseenter(function(){
+		$("#serve").slideDown(200);
+    });
+    $(".l4").mouseleave(function(){
+		$("#serve").slideUp(200);
+    });
+    $(".l5").mouseenter(function(){
+		$("#shoppingBord").slideDown(200);
+    });
+    $(".l5").mouseleave(function(){
+		$("#shoppingBord").slideUp(200);
+    });
+    
+    
+    
+    
+    
+});
+
+</script>
+</head>
+<body>
+	<div class="header">
+        <div class="headertop">
+                 <div class="top">
+                 	     <ul id="u2">
+                 	    	<li id="Lef1"><a href="#"><i class="iconfont fon">&#xf0113;</i>收藏购玫</a></li>
+                 	    	<li id="Lef2"><a href="#"><i class="iconfont fon">&#xf0106;</i>关注微信</a>
+                 	    		<div id="weiChatCode">
+                 	    			<img src="img/WeiChatLogo.png" alt="" />
+                 	    		    <span>扫码关注更多</span>
+                 	    		</div>
+                 	    	</li>
+                 	    	<li id="Lef3"><a href="#"><i class="iconfont fon">&#xe607;</i>手机购玫</a>
+                 	    		<div id="teleCode">
+                 	    			<img src="img/WeiChatLogo.png" alt="" />
+                 	    		    <span>掌握更多精彩</span>
+                 	    		</div>
+                 	    	</li>
+                 	     </ul> 
+                         <ul class="u1">
+                                <li class="l1"><a href="#">您好！请登录</a></li>
+                                <li class="l2"><a href="#">注册</a></li>
+                                <li class="l3"><a href="#">订单查询</a></li>
+                                <li class="l7"><a href="#">我的购玫</a></li>
+                                <li class="l4"><a href="#">客户服务<div class="sj"></div></a>
+                                
+                            		<ul id="serve">
+                            			<br/>
+                            			<li><a href="#">在线付款</a></li>
+                            			<li><a href="#">帮助中心</a></li>
+                            			<li><a href="#">售后服务</a></li>
+                            			<li><a href="#">留言反馈</a></li>
+                            		</ul>
+                                		
+                                </li>
+                                <li class="l5"><a href="#"><i class="iconfont fon">&#xf003f;</i>购物车<div class="sj"></div></a>
+                                	<div id="shoppingBord">
+                                		<div>亲(=^ ^=)<a href="">快去选购吧！</a></div>
+                                	</div>
+                                	
+                                </li>
+                                <li class="l6"><a href="#">鲜花品牌领导者</a></li>
+                         </ul>
+                  </div>
+        </div>
+        <div class="headerlogo">
+               <div class="mid">
+                     <div class="logo">
+                             <a href="#"><img src="img/logo1.png"></a>
+                             
+                     </div>
+                     <div class="search">
+                               <div class="sou">      
+                                     <form>
+                                           <input type="text"placeholder=" 苦水玫瑰"value=""/>
+                                           <input type="submit"value="搜索"/>
+                                     </form>
+                               </div>
+                               
+                              <p>热搜：</p>
+                                  
+                              <ul class="u1">
+                                      <li><a href="#">红玫瑰</a></li>
+                                      <li><a href="#">永生花</a></li>
+                                      <li><a href="#">生日鲜花</a></li>
+                                      <li><a href="#">礼品卡</a></li>
+                                      <li><a href="#">康乃馨</a></li>
+
+                              </ul>
+                              
+                     </div>
+                     <div class="tele">
+                           <div id="teleId">
+                           	
+                           	  <i class="iconfont fon">&#xf012b;</i><a href="#">400-889-8188</a> | <i class="iconfont fon">&#x3437;</i> <a href="#">在线客服</a>
+                           	
+                           </div>  
+                     </div>
+              </div> 
+        </div>
+        <div class="headerbot">
+                <div class="nav">
+                        <div class="b1">
+                                 <h4><a href="#">所有商品分类</a></h4>
+                                 <div class="box2">
+                                          <ul class="subnav">
+                                                     <li class="l1"><a href="#">鲜花用途</a></li>
+                                                     <li class="l2"><a href="#">鲜花花菜</a></li>
+                                                     <li class="l3"><a href="#">鲜花类别</a></li>
+                                                     <li class="l4"><a href="#">永生花</a></li>
+                                                     <li class="l5"><a href="#">蛋糕</a></li>
+                                                     <li class="l6"><a href="#">礼品</a></li>
+                                                     <li class="l7"><a href="#">公仔</a></li>
+                                                     <li class="l8"><a href="#">绿植</a></li>
+                                                     <li class="l9"><a href="#">鲜花</a></li>
+                                          </ul>
+                                  </div>
+                        
+                        </div>
+                        <div class="b2">
+                               <ul>
+                                       <li class="l1"><a href="#">鲜花</a></li>
+                                       <li><a href="#">永生花</a></li>
+                                       <li><a href="#">蛋糕</a></li>
+                                       <li><a href="#">礼品</a></li>
+                                       <li><a href="#">巧克力</a></li>
+                                       <li><a href="#">花语大全</a></li>
+                                       <li><a href="#">企业团购</a></li>
+                                       <li><a href="#">母亲节鲜花</a></li>
+                                     
+                               </ul>
+                        </div>
+                        <div class="b3">
+                              <div class="tip"> 
+                                    <ul>
+
+                                    </ul>
+                              </div>  
+                        </div>
+                </div>
+        </div>   
+</div>	
+  <div id="wrap">
+  	     div
+         <ul id="slide">
+            <li><a title="" href="#"><img src="img/banner_Flily.jpg"/></a></li>
+            <li><a title="" href="#"><img src="img/banner-jingpin1.jpg"/></a></li>
+            <li><a title="" href="#"><img src="img/banner-vaseflower.jpg"/></a></li>
+            <li><a title="" href="#"><img src="img/banner_Fwed.jpg"/></a></li>
+            <li><a title="" href="#"><img src="img/banner_Fcalla.jpg"/></a></li>
+        </ul>
+         <div id="bannerFloatImg">
+  	     	<ul>
+                <li><a href=""><img src="img/floatImg1.jpg"/></a></li>
+                <li><a href=""><img src="img/floatImg2.jpg"/></a></li>
+                <li><a href=""><img src="img/floatImg3.jpg"/></a></li> 	     		
+  	     	</ul>
+   	     </div>
+        <!--跳转按钮-->
+        <a id="prev" href="#">&lt;</a>
+        <a id="next" href="#">&gt;</a>
+        <!--滑动条-->
+        <ul id="list">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
+<script type="text/javascript">
+function temp(str){
+				return document.getElementById(str);
+			}
+			function getStyle(obj,attr){
+				if(obj.currentStyle){
+					return obj.currentStyle[attr];
+				}else{
+					return getComputedStyle(obj,null)[attr];
+				}
+			}
+			
+			var oWrap = temp("wrap");
+			var oSlide = temp("slide");
+			var iWidth = parseInt(getStyle(oWrap,"width"));
+			var oList = temp("list");
+			var oLi = oList.getElementsByTagName("li");
+			var oLen = oLi.length;
+			var oNext = temp("next");
+			var oPrev = temp("prev");
+			var m = 0;  //当前第几张图的索引
+			var timer = null;
+			oSlide.innerHTML+=oSlide.innerHTML;
+			
+			function autoPlay(){
+				timer = setInterval(function(){
+					m++;
+					if(m==oLen+1){
+						oSlide.style.left = "0";
+						m=1;
+					}
+					move(oSlide,{"left":(-1)*m*iWidth+"px"});
+					for(var i=0;i<oLen;i++){
+						oLi[i].className = "";
+					}
+					oLi[m%oLen].className = "active";
+				},3000)
+			}	
+			autoPlay();
+			
+			//当鼠标移动到图片上时停止
+			oWrap.onmouseover = function(){
+				clearInterval(timer);
+			}
+			oWrap.onmouseout = function(){
+				autoPlay();
+			}
+			
+			for(var i=0;i<oLen;i++){
+				oLi[i].index = i;  
+				oLi[i].onmouseover = function(){
+					for(var j=0;j<oLen;j++){
+						oLi[j].className = "";
+					}
+					oLi[this.index].className = "active";
+					m = this.index; 
+					move(oSlide,{"left":(-1)*m*iWidth+"px"});
+				}
+			}
+			oNext.onclick = function(){
+				m++;
+				if(m==oLen+1){
+					oSlide.style.left = "0";
+					m=1;
+				}
+				move(oSlide,{"left":(-1)*m*iWidth+"px"});	
+				for(var i=0;i<oLen;i++){
+					oLi[i].className = "";
+				}
+				oLi[m%oLen].className = "active";
+			}
+			//跳转到指定图片
+			oPrev.onclick = function(){
+				m--;
+				if(m==-1){ 
+					m=oLen-1;
+					oSlide.style.left = (-1)*oLen*iWidth+"px";
+				}
+				move(oSlide,{"left":(-1)*m*iWidth+"px"});
+				for(var i=0;i<oLen;i++){
+					oLi[i].className = "";
+				}
+				oLi[m%oLen].className = "active";
+			}
+
+function getStyle(obj,attr){//获取css样式兼容写法
+    if(obj.currentStyle){
+        return obj.currentStyle[attr];
+    }
+    else{
+        return getComputedStyle(obj,null)[attr];
+    }
+}
+
+function move(obj,json,fn){  	// 属性值可以不加px 透明度是用0-1之间的数值
+    clearInterval(obj.timer)	// 清除正在执行的定时器
+
+    var iSpeed  = 0;
+
+    obj.timer = setInterval(function(){
+        var bOver = true; //假设运动完成
+        for (var attr in json){  //每个属性的遍历修改
+            var iCur = 0;
+            var iTarget;     //   因为我们传入的透明度参数是0-1之间，而我们的初始值是乘100的，所以目标值应该也相应的乘100
+            if(attr == "opacity"){	//透明度
+                iCur = parseFloat(getStyle(obj,"opacity"))*100;
+                iTarget = parseInt(json[attr]*100);
+            }else{
+                iCur = Math.round(parseFloat(getStyle(obj,attr)));
+                iTarget = parseInt(json[attr]);
+            }
+
+            iSpeed = (iTarget - iCur)/5;//获取相对速度
+            iSpeed = iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);//上下取整
+
+            if(iCur != iTarget){
+                bOver = false; //如果某一个属性没有完成运动
+                if(attr == "opacity"){
+                    obj.style.filter ='alpha(opacity:'+(iCur + iSpeed)+')';
+                    obj.style.opacity =(iCur + iSpeed)/100;
+                }else{
+                    obj.style[attr] =iCur + iSpeed +"px";
+                }
+
+            }
+        }
+        if(bOver){//运动完成
+            clearInterval(obj.timer);
+            if(fn){
+            	fn();  //如果有回调函数，执行回调函数
+            }
+
+        }
+
+    },30)
+
+}
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

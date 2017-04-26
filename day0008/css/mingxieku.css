@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0;}
+a{text-decoration:none;}
+li{list-style:none;}
+body{font-family:"微软雅黑";}
+em,i,b,strong{font-style:normal;font-weight:normal;}
+/*--------------以上为公共样式 ----------------*/
+.headertop{height:25px;width:100%;border-bottom:1px solid #e5e5e5;background-color:#eeeff4;font-size:11px;}
+.top{width:1190px;margin:0 auto;}
+.header .u1{float:right;/*margin-right:10px;*/}
+.header .u1 li{float:left;/*background:url(../img/images/首页_03.png) no-repeat 70px 5px;*/}
+.header .u1 a{display:block;height:25px;text-align:center;line-height:25px;color:#666;}
+.header .u1 .l1 a{width:175px;color:#F00;}
+.header .u1 .l2 a{width:100px;}
+.header .u1 .l3 a{width:115px;background:url(../img/images/首页_05.png) no-repeat 5px 5px;}
+.header .u1 .l4 a{width:90px;}
+.header .u1 .l5 a{width:110px;background:url(../img/images/首页_07.png) no-repeat 5px 5px;}
+.header .u1 .l6 a{width:155px;font-size:16px;color:#C00;background:url(../img/images/首页_09.png) no-repeat 5px 5px;}
+/*.header .u1 li:hover{background:#e8e8e8;}*/
+.sj{width:0;height:0;border:5px solid #eeeeee;border-top-color:#696969;float:right;margin:10px 10px 0 -10px;}
+/*---------------------以上为头部样式------------------------*/
+.headerlogo{height:77px;width:100%;border-bottom:1px solid #f7f5f6;}
+.logo{height:77px;width:540px;}
+.logo a,p{float:left;font-size:18px;}
+.logo a img{border:none;}
+.mid{width:1190px;margin:0 auto;}
+.logo a{margin-top:16px;}
+.logo p{margin:41px 0 0 14px;}
+
+
+.search{width:400px;height:77px;position:relative;float:left;}
+.logo,.search{float:left;overflow:hidden;}
+.search input{float:left;font-size:17px;}
+
+.search input[type="text"]{width:272px;height:26px;border:2px solid #d5d5d5;border-right:none;margin-top:16px;}
+.search input[type="submit"]{width:65px;height:30px;border:none;background-color:#444444;color:#fff;margin-top:16px;}
+form{overflow:hidden;}
+.search ul{position:absolute;left:40px;top:50px;font-size:11px;}
+.search p{font-size:11px;position:absolute;left:0px;top:53px;}
+.search ul a{display:block;padding:0 4px;color:#888888;}
+.search ul a:hover{color:#F00;}
+/*---------------------以上为搜索栏----------------------*/
+.mid .buy{width:200px;height:52px;overflow:hidden;float:right;padding:25px 0 0 50px;/*position:absolute;*//*top:50px;left:1160px;*/}
+.buy button{float:right;width:126px;height:34px;border:1px solid #d7d7d7;border-radius:4px;
+background:#eeeeec url(../img/images/首页_19.png) no-repeat 10px 7px;line-height:34px;margin-right:20px;}
+.buy button span{font-size:15px;color:#F00;}
+/*----------------------------以上为搜索栏----------*/
+.headerbot{height:35px;width:100%;background:#a21f25;}
+.nav .b1 h4 a{color:#fff;display:/*inline-*/block;padding-top:5px;height:30px;width:190px;text-align:center;background:#b9363c;}
+.nav{width:1190px;margin:0 auto;position:relative;}
+.nav .b2 li{float:left;line-height:35px;background:url(../img/images/首页_0100.png) no-repeat 0px 10px;}
+.b2 li a{display:block;height:35px;padding:0px 17px 0 13px;color:#fff;}
+.nav .b1,.b2{float:left;}
+/*.b2 .l1{height:35px;width:66px;background:#333;}*/
+.nav .b2 a:hover{/*color:#FF0;*/background:#333;}
+.b3 li{float:left;}
+.b3 a{display:block;height:27px;padding:8px 12px 0 0;font-size:15px;color:#fff;}
+.b3 ul{margin-left:20px;}
+.b3 tip{float:right;}
+.tip{position:absolute;right:0;top:0;}
+.tip li{width:90px;text-align:center;background:url(../img/images/首页_01_03.png) no-repeat 0px 10px;}
+
+.nav .box2{position:absolute;top:35px;width:190px;height:386px;background:#1f1909;}
+.nav .subnav li a{display:block;width:190px;height:43px;text-align:center;line-height:43px;color:#fff;}
+.nav .subnav li a:hover{background:#373327;}
+/*.nav .b1 h4 a:hover{color:;}*/
+.nav .box2{display:none;}
+.nav .b1:hover .box2{display:block;}
+.nav .b3 .l3{position:relative;}
+.nav .b3 .l3 .tipright{position:relative;top:;left:-80px;display:none;}
+.nav .b3 .l3:hover .tipright{display:block;}
+.nav .b3 li a:hover{color:#FF0;}
+/*.banner{position:relative;overflow:hidden;}*/
+
+
+/*-----------------以上为导航栏-------------------*/
+.banner .box1{/*width:1600px;*/width:100%;margin:0 auto;}
+.banner{width:100%;font-size:0;}
+.banner img{width:100%;height:100%;}
+/*-----------------------------------------*/
+.main{background:#f6f6f6;position:relative;padding-bottom:23px;overflow:hidden;}
+.main .maintop{width:1190px;margin:0 auto;background:#FFF;overflow:hidden;}
+.main .tap1 a{float:left;display:block;height:30px;widht:55px;margin-right:25px;/*position:absolute;left:133px;*/color:#333;font-weight:600;}
+.main .tap1 .hua{/*position:absolute;left:133px;*/overflow:hidden;width:1190px;margin:0 auto;}
+.main .tap1 .a1:hover{background:url(../img/名鞋库/未标题-1.png) no-repeat 0 25px;}
+.main .tap1 .a2:hover{background:url(../img/名鞋库/未标题-1.png) no-repeat 0 25px;}
+.main .tap1 .a1{margin:15px 0 12px 0px;}
+.main .tap1 .a2{margin:15px 0 12px 22px;}
+.maintop .logoleft .u1 li{float:left;border:1px solid #dfdfdf;}
+.maintop .logoleft ul{overflow:hidden;}
+.maintop .logoleft .u1 .l1{border-left:none;}
+.main .maintop .logoleft{overflow:hidden;}
+.maintop .logoleft .u1 a{display:block;}
+.maintop .logoleft .u1 .l1{display:block;width:140px;height:70px;background:url(../img/名鞋库/TB2i7h5tXXXXXcJXpXXXXXXXXXX_!!2566697133.jpg) no-repeat ;}
+.maintop .logoleft .u1 .l2{display:block;width:140px;height:70px;background:url(../img/名鞋库/TB2f6IPdVXXXXacXXXXXXXXXXXX_!!2566697133.jpg) no-repeat ;}
+.maintop .logoleft .u1 .l3{display:block;width:140px;height:70px;background:url(../img/名鞋库/TB2Fu7LdVXXXXbvXXXXXXXXXXXX_!!2566697133.jpg) no-repeat ;}
+.maintop .logoleft .u1 .l4{display:block;width:140px;height:70px;background:url(../img/名鞋库/TB2i4kLdVXXXXbqXXXXXXXXXXXX_!!2566697133.jpg) no-repeat ;}
+.maintop .logoleft .u1 .l5{display:block;width:140px;height:70px;background:url(../img/名鞋库/TB2GrQLdVXXXXbqXXXXXXXXXXXX_!!2566697133.jpg) no-repeat ;}
+.maintop .logoleft .u1 .l6{display:block;width:140px;height:70px;background:url(../TB2k7cndVXXXXaTXpXXXXXXXXXX_!!2566697133.jpg) no-repeat ;}
+.maintop .logoleft .u1 .l7{display:block;width:140px;height:70px;background:url(../img/名鞋库/TB2nnuYXPnyQeBjSspiXXb2QpXa_!!2566697133.jpg) no-repeat ;}
+.maintop .logoleft .u2 li{float:left;border:1px solid #dfdfdf;border-top:none;}
+.maintop .logoleft .u2 .l1{border-left:none;}
+.main .maintop .logoleft{overflow:hidden;}
+.maintop .logoleft .u2 a{display:block;width:140px;height:70px;background:url(../img/名鞋库/default_brandwall_bg11.png) no-repeat 45px -170px;}
+.logoleft{/*width:996px;*/}
+.logoleft .l1 a:hover{background:url(../img/名鞋库/TB2i7h5tXXXXXcJXpXXXXXXXXXX_!!2566697133.jpg) no-repeat 0 -94px;}
+.logoleft .l2 a:hover{background:url(../img/名鞋库/TB2f6IPdVXXXXacXXXXXXXXXXXX_!!2566697133.jpg) no-repeat 0 -94px;}
+.logoleft .l3 a:hover{background:url(../img/名鞋库/TB2Fu7LdVXXXXbvXXXXXXXXXXXX_!!2566697133.jpg) no-repeat 0 -94px;}
+.logoleft .l4 a:hover{background:url(../img/名鞋库/TB2i4kLdVXXXXbqXXXXXXXXXXXX_!!2566697133.jpg) no-repeat 0 -94px;}
+.logoleft .l5 a:hover{background:url(../img/名鞋库/TB2GrQLdVXXXXbqXXXXXXXXXXXX_!!2566697133.jpg) no-repeat 0 -94px;}
+.logoleft .l6 a:hover{background:url(../img/名鞋库/TB2k7cndVXXXXaTXpXXXXXXXXXX_!!2566697133.jpg) no-repeat 0 -94px;}
+.logoleft .l7 a:hover{background:url(../img/名鞋库/TB2nnuYXPnyQeBjSspiXXb2QpXa_!!2566697133.jpg) no-repeat 0 -94px;}
+
+
+.logoleft .l2 a:hover{background:url(../img/名鞋库/default_brandwall_bg11.png) no-repeat -450px 0px;}
+.logoright .right>ul{border:1px solid #f1f1f1;padding:3px;float:left;font-size:11px;}
+.logoright .right li a{display:block;width:188px;;background:url(../img/名鞋库/未标题-2.png) no-repeat 4px 12px;text-indent:19px;color:#333;line-height:21px}
+.logoright .right li a:hover{color:#a21f25;}
+.logoright{overflow:hidden;float:right;}
+.logoleft{overflow:hidden;float:left;}
+h3{font-weight:normal;}
+.logoright .point ul li a{display:block;width:8px;height:8px;background:#647680;float:left;margin-right:5px;z-index:100;}
+.logoright .point{position:relative;}
+.logoright .point ul li .a1{position:absolute;bottom:10px;right:10px;}
+.logoright .point ul li .a2{position:absolute;bottom:10px;right:24px;}
+.logoright .point ul li a:hover{width:10px;height:10px;background:#cb0100;}
+.logoright .point .tu2{font-size:0;}
+.mainmid{width:1190px;margin:0 auto;overflow:hidden;margin-top:12px;}
+.mainmid .mid1{float:left;}
+.mainmid .mid2{margin-left:7px;}
+.mainbot{width:1190px;margin:0 auto;overflow:hidden;background:#fff;margin-top:25px;}
+.mainbot .botleft .u1 a{display:block;width:95px;height:40px;border-bottom:1px dashed #CCC;border-right:1px dashed #CCC;background:url(../img/名鞋库/201409101646002.png) no-repeat;}
+.mainbot .botleft .u4 a{display:block;width:95px;height:40px;border-bottom:1px dashed #CCC;border-right:1px dashed #CCC;background:url(../img/名鞋库/201409101646002.png) no-repeat 0px -40px;}
+.mainbot .botleft .u1,.u4{float:left;}
+.mainbot .botleft .box2{overflow:hidden;}
+.mainbot .botleft .u5{display:block;float:left;width:95px;}
+.mainbot .botleft .u5 a,.u6 a{color:#666;font-weight:600;font-size:13px;}
+.mainbot .botleft .box3{margin:16px 0 32px 8px;}
+.mainbot .botleft a:hover{color:#a21f25;}
+.botleft,.botcenter{float:left;}
+.botcenter{margin-left:9px;font-size:0;}
+.mainbot .botright .u7 .a8{display:block;width:195px;height:245px;border-right:1px solid #CCC;border-bottom:1px solid #CCC;
+background:url(../img/名鞋库/s15081f2.jpg) no-repeat;}
+.mainbot .botright .u7 .a9{display:block;width:195px;height:181px;border-right:1px solid #CCC;
+background:url(../img/名鞋库/s15081f5.jpg) no-repeat;}
+.mainbot .botright .u7{float:left;}
+.mainbot .botright .u7 .a1{display:block;width:193px;height:245px;border-bottom:1px solid #CCC;
+background:url(../img/名鞋库/s15081f3.jpg) no-repeat;}
+.mainbot .botright .u7 .a2{display:block;width:193px;height:181px;
+background:url(../img/名鞋库/s15081f7.jpg) no-repeat;}
+hr{border:1px solid #a21f25; }
+/*------------------------------------------以下为footer*/
+.footer{background:#f5f5f5;overflow:hidden;}
+.f1{width:1190px;margin:0 auto;overflow:hidden;padding-top:16px;padding-bottom:25px;background:url(../img/名鞋库/sh1.png) no-repeat 245px;}
+.footer .fot1 #l3 span{font-weight:normal;font-size:17px;color:#999999;}
+.footer .fot1 #l3{font-weight:600;text-indent:30px;background:url(../img/名鞋库/电话.png) no-repeat 0 5px;}
+.footer .fot1 #l1{font-style:italic;font-size:20px;color:#900;line-height:30px;}
+.footer .fot1 li{font-size:13px;}
+.footer .fot1 .erwei img{margin:16px 16px 0 0;}
+.footer .fot1{padding-left:15px;}
+.fot1,.fot2{float:left;}
+.fot2 .fot2box{width:220px;height:177px;float:left;/*background:url(../img/名鞋库/sh1.png) no-repeat;*/}
+.fot2{margin-left:88px;}
+.fot2 .fot2box .fl{font-size:15px;font-weight:600;line-height:37px;}
+.fot2 .fot2box img{margin-top:11px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
