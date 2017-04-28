@@ -6,8 +6,9 @@
 <link rel="stylesheet" type="text/css" href="font/font_8cnzodx1rzxjq0k9/iconfont.css">
 <link rel="stylesheet" type="text/css" href="font/font2/iconfont.css">
 <link rel="stylesheet" type="text/css" href="font/font3/iconfont.css">
+<link rel="stylesheet" type="text/css" href="css/goumei2.css">
 <style>
-body,html{width:100%;height:100%;font-family:Microsoft Yahei;}
+body,html{width:100%;font-family:Microsoft Yahei;overflow-X:hidden;}
 img{border:0;display:block;}
 h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,body,input,dd{margin:0;padding:0;}
 li{list-style:none;}
@@ -21,7 +22,7 @@ em,i,b,strong{font-style:normal;font-weight:normal;}
 .headertop{height:25px;width:100%;border-bottom:1px solid #e5e5e5;background-color:#f2f2f2;font-size:11px;}
 .top{width:1190px;margin:0 auto;}
 .header .u1{float:right;/*margin-right:10px;*/}
-.header .u1 li{float:left;/*background:url(../img/images/首页_03.png) no-repeat 70px 5px;*/}
+.header .u1 li{float:left;}
 .header .u1 a{display:block;height:25px;text-align:center;line-height:25px;color:#666;}
 .header .u1 .l1 a{width:100px;color:#e40202;}
 .header .u1 .l2 a{width:60px;}
@@ -30,29 +31,31 @@ em,i,b,strong{font-style:normal;font-weight:normal;}
 .header .u1 .l4 a{width:100px;}
 .header .u1 .l4{position:relative;}
 #serve a:hover{color:#e40202;}
+.header .u1 a:hover{color:#E40202;}
 .header .u1 .l5 a{width:100px;}
 .header .u1 .l5{position:relative;}
 .header .u1 .l7 a{width:80px;}
-.header .u1 .l6 a{width:150px;font-size:14px;color:#666;background:url(../img/images/首页_09.png) no-repeat 5px 5px;}
+
 /*.header .u1 li:hover{background:#e8e8e8;}*/
-.sj{width:0;height:0;border:5px solid #eeeeee;border-top-color:#696969;float:right;margin:10px 10px 0 -10px;}
-#u2 li{float:left;margin-left:20px;}
+.sj{width:0;height:0;border:5px solid transparent;border-top-color:#696969;float:right;margin:10px 10px 0 -10px;}
+#u2 li{float:left;}
 #u2 li a{display:block;text-decoration: none;color:#666;line-height:25px;}
 #u2 li a i{color:#c50101;}
 #u2 li a:hover{color:#e40202;}
-#Lef2{position:relative;z-index:10;}
-#Lef3{position:relative;z-index:10;}
+#Lef2{position:relative;z-index:10;width:100px;text-align:center;}
+#Lef3{position:relative;z-index:10;width:100px;text-align:center;}
+#Lef1{padding:0 20px 0 20px;}
 
-#weiChatCode{position:absolute;width:120px;height:160px;background:#f2f2f2;display:none;}
+#weiChatCode{position:absolute;width:120px;height:160px;background:#fff;display:none;}
 #weiChatCode img{width:100px;height:100px;margin:15px 10px 5px 10px;}
 #weiChatCode span{display:block;text-align:center;font-size:10px;width:100%;}
 
-#teleCode{position:absolute;width:120px;height:160px;background:#f2f2f2;display:none;}
+#teleCode{position:absolute;width:120px;height:160px;background:#fff;display:none;}
 #teleCode img{width:100px;height:100px;margin:15px 10px 5px 10px;}
 #teleCode span{display:block;text-align:center;font-size:10px;width:100%;}
-#serve{width:100px;height:130px;background:#f2f2f2;position:absolute;z-index:10;display:none;}
+#serve{width:100px;height:130px;background:#fff;position:absolute;z-index:10;display:none;}
 #serve a{line-height:16px;color:#666;}
-#shoppingBord{width:200px;height:100px;position:absolute;background:#f2f2f2;display:none;}
+#shoppingBord{width:200px;height:100px;position:absolute;background:#fff;display:none;border:1px solid #CCCCCC;border-top:none;}
 #shoppingBord div{width:100%;text-align:center;margin:10px 0 0 0;}
 #shoppingBord a:hover{color:red;}
 
@@ -72,7 +75,7 @@ em,i,b,strong{font-style:normal;font-weight:normal;}
 .search input{float:left;font-size:17px;}
 
 .search input[type="text"]{font-size:16px;width:272px;height:26px;border:2px solid #d5d5d5;border-right:none;margin-top:16px;outline:none;}
-.search input[type="submit"]{width:65px;height:28px;border:none;background-color:red;color:#fff;margin-top:16px;}
+.search input[type="submit"]{width:65px;height:30px;border:none;background-color:red;color:#fff;margin-top:16px;outline:none;}
 form{overflow:hidden;}
 .search ul{position:absolute;left:40px;top:50px;font-size:11px;}
 .search p{font-size:11px;position:absolute;left:0px;top:53px;}
@@ -88,9 +91,9 @@ form{overflow:hidden;}
 
 /*----------------------------以上为客服和电话----------*/
 .headerbot{height:35px;width:100%;background:#e40202;}
-.nav .b1 h4 a{color:#fff;display:/*inline-*/block;padding-top:5px;height:30px;width:190px;text-align:center;background:#b9363c;}
+.nav .b1 h4 a{color:#fff;display:/*inline-*/block;padding:6px 0 0 10px;height:29px;width:210px;background:#c00202;}
 .nav{width:1190px;margin:0 auto;position:relative;}
-.nav .b2 li{float:left;line-height:35px;background:url(../img/images/首页_0100.png) no-repeat 0px 10px;}
+.nav .b2 li{float:left;line-height:35px;}
 .b2 li a{display:block;height:35px;padding:0px 17px 0 13px;color:#fff;}
 .nav .b1,.b2{float:left;}
 /*.b2 .l1{height:35px;width:66px;background:#333;}*/
@@ -101,16 +104,10 @@ form{overflow:hidden;}
 .b3 tip{float:right;}
 
 
-.nav .box2{position:absolute;z-index:10;top:35px;width:190px;height:386px;background:#1f1909;}
-.nav .subnav li a{display:block;width:190px;height:43px;text-align:center;line-height:43px;color:#fff;}
-.nav .subnav li a:hover{background:#373327;}
-/*.nav .b1 h4 a:hover{color:;}*/
+.nav .box2{position:absolute;z-index:5;top:35px;width:220px;height:425px;background:rgba(255,244,244,.9);border-bottom:5px solid #e40202;}
 
-.nav .b1:hover .box2{display:block;}
-.nav .b3 .l3{position:relative;}
-.nav .b3 .l3 .tipright{position:relative;top:;left:-80px;display:none;}
-.nav .b3 .l3:hover .tipright{display:block;}
-.nav .b3 li a:hover{color:#FF0;}
+
+
 
     ul,li{
         list-style-type:none;
@@ -183,6 +180,19 @@ form{overflow:hidden;}
     #bannerFloatImg li{width:200px;height:140px;margin:0 0 5px 0;transition:.5s linear;}
     #bannerFloatImg li img{width:200px;height:140px;}
     #bannerFloatImg li:hover{transform: translateX(-20px);}
+  
+  #use{margin:5px 0 0 10px;}
+  #use li{float:left;width:50px;text-align:center;font-size:12px;line-height:20px;margin-right:15px;}
+  #use a:hover{color:#e40202;}
+  #use a{color:#666666;}
+  .subnav h2{font-size:14px;margin:10px 0 0 10px;color:#e40202;}
+  #sidebar1,#sidebar2,#sidebar3,#sidebar4{border-bottom:1px solid #ccc;padding-bottom:10px;}
+  #sidebar2 #use li{float:left;width:40px;text-align:center;font-size:12px;line-height:20px;margin-right:10px;}
+  #sidebar3 #use li{float:left;width:40px;text-align:center;font-size:12px;line-height:20px;margin-right:5px;}
+  #sidebar4,#sidebar5{position:relative;}
+  #innerShow1{position:absolute;width:600px;height:430px;top:-284px;left:220px;background:rgba(255,244,244,.8);display:none;}
+  #innerShow2{position:absolute;width:600px;height:430px;top:-349px;left:220px;background:rgba(255,244,244,.8);display:none;}
+  #sideBarRight{width:33px;height:100%;position:fixed;right:0px;background:rgba(0,0,0,.7);z-index:40;}
 
 </style>
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
@@ -191,40 +201,115 @@ form{overflow:hidden;}
 $(function(){
 
 	$("#Lef2").mouseenter(function(){
-		$("#weiChatCode").slideDown(200);	
+		$("#Lef2").css("background-color","#fff");
+		$("#weiChatCode").slideDown(200);
+		
 	});
 	$("#Lef2").mouseleave(function(){
+		$("#Lef2").css("background-color","#f2f2f2");
 		$("#weiChatCode").slideUp(200);	
 	});
 	
 	$("#Lef3").mouseenter(function(){
+		$("#Lef3").css("background-color","#fff");
 		$("#teleCode").slideDown(200);	
 	});
 	$("#Lef3").mouseleave(function(){
+		$("#Lef3").css("background-color","#f2f2f2");
 		$("#teleCode").slideUp(200);	
 	});
 	$(".l4").mouseenter(function(){
+		$(".l4").css("background-color","#fff");
 		$("#serve").slideDown(200);
     });
     $(".l4").mouseleave(function(){
+    	$(".l4").css("background-color","#f2f2f2");
 		$("#serve").slideUp(200);
     });
     $(".l5").mouseenter(function(){
+    	$(".l5").css("background-color","#fff");
 		$("#shoppingBord").slideDown(200);
     });
     $(".l5").mouseleave(function(){
+    	$(".l5").css("background-color","#f2f2f2");
 		$("#shoppingBord").slideUp(200);
     });
-    
-    
-    
-    
-    
+    $("#sidebar4").mouseenter(function(){
+
+		$("#innerShow1").slideDown(10);
+    });
+    $("#sidebar4").mouseleave(function(){
+		$("#innerShow1").slideUp(10);
+    });
+     $("#sidebar5").mouseenter(function(){
+		$("#innerShow2").slideDown(10);
+    });
+    $("#sidebar5").mouseleave(function(){
+		$("#innerShow2").slideUp(10);
+    });  
+
+
 });
+
 
 </script>
 </head>
 <body>
+	<div id="sideBarRight">
+		<ul id="sideBarR">
+			<li id="B1"><a href="" class="iconfont fon">&#xf00f3;</a>
+				<div>
+					<div id="box1">
+						<div id="photoImg1"><img src="img/banner-vaseflower.jpg" alt="" /></div>
+						<ul class="clear">
+							<li>你好！请</li>
+							<li><a href="">登录　|</a></li>
+							<li><a href="">注册</a></li>
+						</ul>
+					</div>
+					<div id="box2">
+						<div><a href="" class="iconfont fon">&#xe630;我的订单</a></div>
+						
+					</div>
+				</div>
+			</li>
+			<li id="B2"><a href="" class="iconfont fon">&#x344b;<e id="tip">购物车</e><span id="buySum">0</span></a></li>
+			<li id="B3"><a href="" class="iconfont fon">&#xf0054;</a>
+				<div><a href="">我的关注</a></div>
+			</li>
+			<li id="B4"><a href="" class="iconfont fon">&#x3466;</a>
+				<div><a href="">专属特卖</a></div>
+			</li>
+			<li id="B5"><a href="" class="iconfont fon">&#xf012b;</a>
+				<div><a href="">400-562-8888</a></div>
+			</li>
+			<li id="B6"><a href="" class="iconfont fon">&#x3469;</a>
+				<div><a href="">在线客服</a></div>
+			</li>
+		</ul>
+		<ul id="slideBarBot">
+			<li><a href="" class="iconfont fon">&#xf010a;</a>
+				<div id="secCode">
+					<img src="img/WeiChatLogo.png" id="code1" alt="" /><img id="code2" src="img/WeiChatLogo.png" alt="" />
+				    <div>扫码关注！更多惊喜等着你！</div>
+				</div>
+				
+			</li>
+			<li><a href="" class="iconfont fon">&#xe631;</a>
+				<div id="back">
+					功能反馈
+				</div>
+				
+			</li>
+			<li><a href="" class="iconfont fon">&#xf012c;</a>
+				<div id="home">
+					返回顶部
+				</div>
+				
+			</li>			
+		</ul>
+		
+	</div>
 	<div class="header">
         <div class="headertop">
                  <div class="top">
@@ -272,7 +357,7 @@ $(function(){
         <div class="headerlogo">
                <div class="mid">
                      <div class="logo">
-                             <a href="#"><img src="img/logo1.png"></a>
+                             <h1 title=""><a href="#"><img src="img/logo1.png"></a></h1>
                              
                      </div>
                      <div class="search">
@@ -305,20 +390,179 @@ $(function(){
               </div> 
         </div>
         <div class="headerbot">
-                <div class="nav">
+                <div class="nav clear">
                         <div class="b1">
                                  <h4><a href="#">所有商品分类</a></h4>
                                  <div class="box2">
                                           <ul class="subnav">
-                                                     <li class="l1"><a href="#">鲜花用途</a></li>
-                                                     <li class="l2"><a href="#">鲜花花菜</a></li>
-                                                     <li class="l3"><a href="#">鲜花类别</a></li>
-                                                     <li class="l4"><a href="#">永生花</a></li>
-                                                     <li class="l5"><a href="#">蛋糕</a></li>
-                                                     <li class="l6"><a href="#">礼品</a></li>
-                                                     <li class="l7"><a href="#">公仔</a></li>
-                                                     <li class="l8"><a href="#">绿植</a></li>
-                                                     <li class="l9"><a href="#">鲜花</a></li>
+                                               <li id="sidebar1">
+                                               	    <h2>鲜花用途</h2>
+                                               	    <ul id="use" class="clear">
+                                               	    	<li><a href="#">爱情鲜花</a></li>
+                                               	    	<li><a href="#">友情鲜花</a></li>
+                                               	    	<li><a href="#">生日鲜花</a></li>
+                                               	    	<li><a href="#">问候长辈</a></li>
+                                               	    	<li><a href="#">探病慰问</a></li>
+                                               	    	<li><a href="#">道歉鲜花</a></li>
+                                               	    	<li><a href="#">祝贺鲜花</a></li>
+                                               	    	<li><a href="#">婚庆鲜花</a></li>
+                                               	    	<li><a href="#">商务鲜花</a></li>
+                                               	    </ul>
+                                               </li>
+                                               <li id="sidebar2">
+                                               	    <h2>鲜花花材</h2>
+                                               	    <ul id="use" class="clear">
+                                               	    	<li><a href="#">玫瑰</a></li>
+                                               	    	<li><a href="#">康乃馨</a></li>
+                                               	    	<li><a href="#">郁金香</a></li>
+                                               	    	<li><a href="#">百合</a></li>
+                                               	    	<li><a href="#">弗朗</a></li>
+                                               	    	<li><a href="#">马蹄莲</a></li>
+                                               	    	<li><a href="#">向日葵</a></li>
+                                               	    </ul>                                               	
+                                               	
+                                               </li>
+                                               <li id="sidebar3">
+                                                    <h2>鲜花类别</h2>
+                                               	    <ul id="use" class="clear">
+                                               	    	<li><a href="#">花束</a></li>
+                                               	    	<li><a href="#">盆花</a></li>
+                                               	    	<li><a href="#">瓶花</a></li>
+                                               	    	<li><a href="#">精品花</a></li>
+                                               	    	<li><a href="#">果篮</a></li>
+                                               	    	<li><a href="#">桌面花</a></li>
+                                               	    	<li><a href="#">开业花</a></li>
+                                               	    </ul>                                               	
+                                               	
+                                               </li>
+                                               <li id="sidebar4">
+                                                    <h2>鲜花类别       <i class="iconfont fon">&#xf0116;</i></h2>
+                                                    <div id="innerShow1">
+                                                    	 <div id="det1">
+                                                    	 	<h2>| 礼品类别</h2>
+                                                    	 	<ul id="showUpU2" class="clear">
+                                                    	 		<li><a href=""><img src="img/gift1.jpg"></a></li>
+                                                    	 		<li><a href=""><img src="img/gift2.jpg"></a></li>
+                                                    	 		<li><a href=""><img src="img/gift3.jpg"></a></li>
+                                                    	 		<li><a href=""><img src="img/gift4.jpg"></a></li>
+                                                    	 		<li><a href=""><img src="img/gift5.jpg"></a></li>
+                                                    	 		<li><a href=""><img src="img/gift6.jpg"></a></li>
+                                                    	 		<li><a href=""><img src="img/gift7.jpg"></a></li>
+                                                    	 		<li><a href=""><img src="img/gift8.jpg"></a></li>
+                                                    	 		<li><a href=""><img src="img/gift9.jpg"></a></li>
+                                                    	 		<li><a href=""><img src="img/gift10.jpg"></a></li>
+                                                    	 		<li><a href=""><img src="img/gift11.jpg"></a></li>
+                                                    	 		<li><a href=""><img src="img/gift12.jpg"></a></li>
+                                                    	 	</ul>
+                                                    	 </div>
+                                                    	 <div id="det2">
+                                                    	 	<h2>| 品牌公仔</h2>
+                                                    	 	<ul class="clear">
+                                                    	 		<li><a href="">Hello Kitty公仔</a> </li>
+                                                    	 		<li><a href="">韩国OZland公仔</a></li>
+                                                    	 		<li><a href="">Dog神烦狗</a></li>
+                                                    	 		<li><a href="">卡通花束（公仔花束）</a></li>
+                                                    	 	</ul>
+                                                    	 </div>
+                                                    	 <div id="det3">
+                                                    	 	<h2>| 绿植花卉</h2>
+                                                    	 	<ul>
+                                                    	 		<li><a href="">盆栽花卉</a></li>
+                                                    	 		<li><a href="">绿色植物</a></li>
+                                                    	 	</ul>
+                                                    	 </div>
+                                                    	
+                                                    </div>
+                                               	    <ul id="use" class="clear">
+                                               	    	<li><a href="#">经典花盆</a></li>
+                                               	    	<li><a href="#">巨型玫瑰</a></li>
+                                               	    	<li><a href="#">熏衣草</a></li> 
+                                               	    </ul>                                               	
+                                               	                                              	
+                                               	
+                                               </li>
+                                               <li id="sidebar5">
+                                                     <h2>蛋糕       <i class="iconfont fon">&#xf0116;</i></h2>
+                                                    <div id="innerShow2">
+                                                    	<div id="showUp">
+                                                    		<h2>| 蛋糕品牌</h2>
+                                                    		<ul id="showUpU1" class="clear">
+                                                    			<li><a href=""><img src="img/cake1.png" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake2.jpg" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake3.png" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake4.jpg" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake5.jpg" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake6.jpg" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake7.jpg" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake8.jpg" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake9.jpg" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake10.jpg" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake11.jpg" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake12.jpg" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake13.jpg" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake14.png" alt="" /></a></li>
+                                                    			<li><a href=""><img src="img/cake15.png" alt="" /></a></li>
+                                                    			<li><a href="" id="moreCake">全国蛋糕</a></li>
+                                                    		</ul>
+                                                    	</div>
+                                                    	<div id="showDown">
+                                                    		<h2>| 蛋糕城市</h2> 
+                                                    		<ul id="showDownU1" class="clear">
+                                                                <li><a href="">北京</a></li>
+                                                                <li><a href="">上海</a></li>
+                                                                <li><a href="">广州</a></li>
+                                                                <li><a href="">深圳</a></li>
+                                                                <li><a href="">天津</a></li>
+                                                                <li><a href="">成都</a></li>
+                                                                <li><a href="">重庆</a></li>
+                                                                <li><a href="">杭州</a></li>
+                                                                <li><a href="">苏州</a></li>
+                                                                <li><a href="">兰州</a></li>
+                                                                <li><a href="">南宁</a></li>
+                                                                <li><a href="">海口</a></li>
+                                                                <li><a href="">西宁</a></li>
+                                                                <li><a href="">乌鲁木齐</a></li>
+                                                                <li><a href="">厦门</a></li>
+                                                                <li><a href="">福州</a></li>
+                                                                <li><a href="">青岛</a></li>
+                                                                <li><a href="">济南</a></li>
+                                                                <li><a href="">哈尔滨</a></li>
+                                                                <li><a href="">大连</a></li>
+                                                                <li><a href="">拉萨</a></li>
+                                                                <li><a href="">宁波</a></li>
+                                                                <li><a href="">常州</a></li>
+                                                                <li><a href="">东莞</a></li>
+                                                                <li><a href="">保定</a></li>
+                                                                <li><a href="">唐山</a></li>
+                                                                <li><a href="">长沙</a></li>
+                                                                <li><a href="">呼和浩特</a></li>
+                                                                <li><a href="">佛山</a></li>
+                                                                <li><a href="">遂宁</a></li>
+                                                                <li><a href="">泸州</a></li>
+                                                                <li><a href="">宝鸡</a></li>
+                                                                <li><a href="">咸阳</a></li>
+                                                                <li><a href="">渭南</a></li>
+                                                                <li><a href="">昆明</a></li>
+                                                                <li><a href="">长春</a></li>
+                                                                <li><a href="">太原</a></li>
+                                                                <li><a href="">喀什</a></li>
+                                                                <li><a href="">南昌</a></li>
+                                                                <li><a href="">更多>></a></li>
+                                                    		</ul>
+                                                    	</div>
+                                                    </div>
+                                               	    <ul id="use" class="clear">
+                                               	    	<li><a href="#">元祖</a></li>
+                                               	    	<li><a href="#">好利来</a></li>
+                                               	    	<li><a href="#">可颂坊</a></li> 
+                                               	    </ul>                                               	
+                                               	                                              	                                           	                                              	
+                                               	
+                                               </li>
+                                               <li id="sidebar6">
+                                               	
+                                               	
+                                               </li>
                                           </ul>
                                   </div>
                         
@@ -346,8 +590,8 @@ $(function(){
                 </div>
         </div>   
 </div>	
-  <div id="wrap">
-  	     div
+<div id="wrap">
+  	     
          <ul id="slide">
             <li><a title="" href="#"><img src="img/banner_Flily.jpg"/></a></li>
             <li><a title="" href="#"><img src="img/banner-jingpin1.jpg"/></a></li>
@@ -373,7 +617,422 @@ $(function(){
             <li></li>
             <li></li>
         </ul>
-    </div>
+</div>
+<div id="main">
+	<div id="minTitle">
+		<ul id="titl" class="clear">
+			<li><a href=""><img src="img/title1.png" alt="" /></a></li>
+			<li><a href=""><img src="img/title2.png" alt="" /></a></li>
+			<li><a href=""><img src="img/title3.png" alt="" /></a></li>
+			<li><a href=""><img src="img/title4.png" alt="" /></a></li>
+			<li><a href=""><img src="img/title5.png" alt="" /></a></li>
+		</ul>
+	</div>
+	
+	<div id="flower">
+		<ul id="flowers" class="clear">
+			<li><a href=""><img src="img/flow5.jpg" alt="" /></a></li>
+			<li><a href=""><img src="img/flow1.jpg" alt="" /></a></li>
+			<li><a href=""><img src="img/flow2.jpg" alt="" /></a></li>
+			<li><a href=""><img src="img/flow3.jpg" alt="" /></a></li>
+			<li><a href=""><img src="img/flow4.jpg" alt="" /></a></li>
+		</ul>
+		
+	</div>
+	<h2 id="FlowTltle" class="clear"><a href="">爱情鲜花</a>　<span>送·让你怦然心动的人</span><em>更多爱情鲜花>></em></h2>
+	<div id="FlowerDetail" class="clear">
+		<div id="FlowLeft">
+			<img src="img/girl1.jpg" alt="" />
+			<div id="loveArea"><a href="">爱情鲜花专区 >></a></div>
+		</div>
+		<div id="FlowRight">
+			<ul class="clear">
+				<li>
+					<div><img src="img/hua13.jpg" alt="" /></div>
+					<a href="">鲜花·一往情深  ¥239</a>
+				</li>
+				<li>
+					<div><img src="img/hua8.jpg" alt="" /></div>
+					<a href="">鲜花·一心一意  ¥126</a>
+				</li>
+				<li>
+					<div><img src="img/hua9.jpg" alt="" /></div>
+					<a href="">鲜花·阳光海岸  ¥279</a>
+				</li>
+				<li>
+					<div><img src="img/hua10.jpg" alt="" /></div>
+					<a href="">鲜花·不变承诺  ¥139</a>
+				</li>
+				<li>
+					<div><img src="img/hua6.jpg" alt="" /></div>
+					<a href="">鲜花·爱的诺言  ¥539</a>
+				</li>
+				<li>
+					<div><img src="img/hua7.jpg" alt="" /></div>
+					<a href="">鲜花·浪漫絮语  ¥339</a>
+				</li>
+				<li>
+					<div><img src="img/hua12.jpg" alt="" /></div>
+					<a href="">鲜花·爱的小星  ¥298</a>
+				</li>
+				<li>
+					<div><img src="img/hua5.jpg" alt="" /></div>
+					<a href="">鲜花·月光女神  ¥229</a>
+				</li>
+			</ul>
+			
+		</div>
+		
+	</div>
+	
+	<h2 id="FlowTltle" class="clear"><a href="">送长辈鲜花</a>　<span>赠·父母/恩师/长辈</span><em>更多送长辈鲜花>></em></h2>
+	<div id="FlowerDetail" class="clear">
+		<div id="FlowLeft2">
+			<img src="img/family.jpg" alt="" />
+			<div id="loveArea"><a href="">送长辈鲜花专区 >></a></div>
+		</div>
+		<div id="FlowRight">
+			<ul class="clear">
+				<li>
+					<div><img src="img/hua1.jpg" alt="" /></div>
+					<a href="">鲜花·感激 ¥239</a>
+				</li>
+				<li>
+					<div><img src="img/hua2.jpg" alt="" /></div>
+					<a href="">鲜花·母爱  ¥126</a>
+				</li>
+				<li>
+					<div><img src="img/hua16.jpg" alt="" /></div>
+					<a href="">鲜花·幸福绽放  ¥279</a>
+				</li>
+				<li>
+					<div><img src="img/hua5.jpg" alt="" /></div>
+					<a href="">鲜花·健康常久  ¥139</a>
+				</li>
+				<li>
+					<div><img src="img/hua8.jpg" alt="" /></div>
+					<a href="">鲜花·天使之岂  ¥539</a>
+				</li>
+				<li>
+					<div><img src="img/hua9.jpg" alt="" /></div>
+					<a href="">鲜花·永远的爱  ¥339</a>
+				</li>
+				<li>
+					<div><img src="img/hua15.jpg" alt="" /></div>
+					<a href="">鲜花·父爱  ¥298</a>
+				</li>
+				<li>
+					<div><img src="img/hua13.jpg" alt="" /></div>
+					<a href="">鲜花·圆满  ¥229</a>
+				</li>
+			</ul>
+			
+		</div>
+		
+	</div>
+	
+	<h2 id="FlowTltle" class="clear"><a href="">蛋糕</a>　<span>一起品味甜蜜时光</span><em>更多蛋糕>></em></h2>
+	<div id="cakeDetail" class="clear">
+		<div id="cakeLeft">
+			<div id="box3">
+				<img src="img/smallcake6.jpg" alt="" />
+				<div id="innerShow3"><a href="">蛋糕专区 >></a></div>
+			</div>	
+			<div id="Area">
+				<div id="areaTop">
+					<h3>
+						<a href="">按城市选购蛋糕</a>
+					</h3>
+					<ul class="clear">
+						<li><a href="">北京</a></li>
+						<li><a href="">上海</a></li>
+						<li><a href="">深圳</a></li>
+						<li><a href="">广州</a></li>
+						<li><a href="">天津</a></li>
+						<li><a href="">成都</a></li>
+						<li><a href="">重庆</a></li>
+						<li><a href="">西安</a></li>
+						<li><a href="">杭州</a></li>
+						<li><a href="">南京</a></li>
+						<li><a href="">苏州</a></li>
+						<li><a href="">沈阳</a></li>
+						<li><a href="">武汉</a></li>
+						<li><a href="">更多>></a></li>
+					</ul>
+					
+				</div>
+				<div id="areaBot">
+					<h3>
+						<a href="">蛋糕品牌</a>
+					</h3>
+					<ul class="clear">
+						<li><a href="">元祖蛋糕</a></li>
+						<li><a href="">好利来蛋糕</a></li>
+						<li><a href="">幸福西饼蛋糕</a></li>
+						<li><a href="">诺心蛋糕</a></li>
+						<li><a href="">窝夫小子蛋糕</a></li>
+						<li><a href="">Mcake蛋糕</a></li>
+						<li><a href="">可颂坊蛋糕</a></li>
+						<li><a href="">米卡米卡蛋糕</a></li>
+						<li><a href="">Vcake蛋糕</a></li>
+						<li><a href="">一品轩蛋糕</a></li>
+						<li><a href="">卡拉罗蛋糕</a></li>
+						<li><a href="">美滋每客蛋糕</a></li>
+						<li><a href="">贝斯克蛋糕</a></li>
+						<li><a href="">甜心蛋糕</a></li>
+						<li><a href="">更多>></a></li>
+					</ul>
+					
+				</div>
+				
+			</div>
+		</div>
+		<div id="cakeRight">
+			<ul class="clear">
+				<li>
+					<div><img src="img/smallcake1.jpg" alt="" /></div>
+					<a href="">鲜花·感激 ¥239</a>
+				</li>
+				<li>
+					<div><img src="img/smallcake2.jpg" alt="" /></div>
+					<a href="">鲜花·母爱  ¥126</a>
+				</li>
+				<li>
+					<div><img src="img/smallcake3.jpg" alt="" /></div>
+					<a href="">鲜花·幸福绽放  ¥279</a>
+				</li>
+				<li>
+					<div><img src="img/smallcake4.jpg" alt="" /></div>
+					<a href="">鲜花·健康常久  ¥139</a>
+				</li>
+				<li>
+					<div><img src="img/smallcake5.jpg" alt="" /></div>
+					<a href="">鲜花·天使之岂  ¥539</a>
+				</li>
+				<li>
+					<div><img src="img/smallcake6.jpg" alt="" /></div>
+					<a href="">鲜花·永远的爱  ¥339</a>
+				</li>
+				<li>
+					<div><img src="img/smallcake7.jpg" alt="" /></div>
+					<a href="">鲜花·父爱  ¥298</a>
+				</li>
+				<li>
+					<div><img src="img/smallcake8.jpg" alt="" /></div>
+					<a href="">鲜花·圆满  ¥229</a>
+				</li>
+			</ul>
+			
+		</div>
+		
+	</div>
+	
+	<div id="news" class="clear">
+		<div id="newLeft">
+			<h3 class="clear">感动瞬间 <em class="iconfont fon"><a href="">&#xe661;</a></em></h3>
+			<ul>
+				<li><a href="">· 希望你永远自由自在</a></li>
+				<li><a href="">· 爱你如初</a></li>
+				<li><a href="">· 我们一直在你身边</a></li>
+				<li><a href="">· 《38℃》</a></li>
+				<li><a href="">· 在最美的年华遇见你</a></li>
+				<li><a href="">· 我永远的小公举</a></li>
+			</ul>
+		</div>
+		<div id="newMid">
+			<h3 class="clear">最新评价<em class="iconfont fon"><a href="">&#xe661;</a></em></h3>
+			<ul>
+				<li class="clear">
+					<dl id="sigMass">
+						<dt><img src="img/hua10.jpg" alt="" /></dt>
+						<dd><a href="">2562...</a></dd>
+					</dl>
+					<dl id="sigbord">
+						<dt class="clear"><em class="iconfont fon">&#xf0113;&#xf0113;&#xf0113;&#xf0113;&#xf0113;</em><i>2017-4-25</i></dt>
+					
+						<dd>内容：好，非常准时！</dd>
+					</dl>
+				</li>
+				<li class="clear">
+					<dl id="sigMass">
+						<dt><img src="img/hua10.jpg" alt="" /></dt>
+						<dd><a href="">2562...</a></dd>
+					</dl>
+					<dl id="sigbord">
+						<dt class="clear"><em class="iconfont fon">&#xf0113;&#xf0113;&#xf0113;&#xf0113;&#xf0113;</em><i>2017-4-25</i></dt>
+					
+						<dd>内容：好，非常准时！</dd>
+					</dl>					
+					
+				</li>
+				<li class="clear">
+					<dl id="sigMass">
+						<dt><img src="img/hua10.jpg" alt="" /></dt>
+						<dd><a href="">2562...</a></dd>
+					</dl>
+					<dl id="sigbord">
+						<dt class="clear"><em class="iconfont fon">&#xf0113;&#xf0113;&#xf0113;&#xf0113;&#xf0113;</em><i>2017-4-25</i></dt>
+					
+						<dd>内容：好，非常准时！</dd>
+					</dl>					
+					
+				</li>
+			</ul>
+		</div>
+		<div id="newRight" class="clear">
+			<h3 class="clear">热门资讯 <em class="iconfont fon"><a href="">&#xe661;</a></em></h3>
+			<div>
+				<ul>
+					<li><a href="">· 适合母亲节的花束有哪些？</a></li>
+					<li><a href="">· 2017年母亲节在那一天？</a></li>
+					<li><a href="">· 12星座异地恋如何维持？</a></li>
+					<li><a href="">· 看十二生肖收花后如何反应？</a></li>
+					<li><a href="">· 送花的含义，生活中如何送花？</a></li>
+					<li><a href="">· 送女友鲜花，卡片写什么？</a></li>
+				</ul>
+			</div>
+			<div id="question">
+			    <ul>
+			    	<li><a href="">· 2017年母亲节专题</a></li>
+			    	<li><a href="">· 鲜花支数与其对应含义</a></li>
+			    	<li><a href="">· 鲜花寓意·浪漫花语</a></li>
+			    	<li><a href="">· 经典送花祝福语</a></li>
+			    	<li><a href="">· 送花常识与技巧</a></li>
+			    	<li><a href="">· 女孩子喜欢别人送鲜花吗？</a></li>
+			    </ul>
+			</div>
+		</div>
+	</div>
+	
+	<div id="section2">
+		<ul class="clear">
+			<li id="lod1"><img src="img/load1.png" alt="" /></li>
+			<li><a href=""><img src="img/home_manhua.jpg"></a></li>
+			<li id="lod2"><img src="img/load2.png" alt="" /></li>
+		</ul>
+	</div>
+	<div id="label">
+		<ul class="clear">
+			<li><em class="iconfont fon">&#xf0178;</em><a href="">　订单实拍</a></li>
+			<li><em class="iconfont fon">&#xe667;</em><a href="">　环境保护</a></li>
+			<li><em class="iconfont fon">&#xe603;</em><a href="">　安全可靠</a></li>
+			<li><em class="iconfont fon">&#xe613;</em><a href="">　速递直达</a></li>
+			<li><em class="iconfont fon">&#xf010d;</em><a href="">　客户信赖</a></li>
+			<li><em class="iconfont fon">&#xe615;</em><a href="">　爱心捐赠</a></li>
+			<li><em class="iconfont fon">&#xe62a;</em><a href="">　3小时配送</a></li>
+			<li id="life"><a href=""><em class="iconfont fon">&#xf029d;</em></a></li>
+		</ul>
+		
+	</div>
+	
+	<ul id="tag" class="clear">
+		<li><a href="">网站首页</a></li>
+		<li><a href="">关于我们</a></li>
+		<li><a href="">媒体报道</a></li>
+		<li><a href="">联系方式</a></li>
+		<li><a href="">企业团购</a></li>
+		<li><a href="">花店加盟</a></li>
+		<li><a href="">友情链接</a></li>
+		<li><a href="">在线补款</a></li>
+		<li id="choseGM"><a href="">选择购玫</a></li>
+	</ul>
+	
+</div>
+<footer>
+	<div id="cont" class="clear">	
+		<div id="fotBox1">
+			<h2>客户服务</h2>
+			<ul>
+				<li><a href="">服务申明</a></li>
+				<li><a href="">支付说明</a></li>
+				<li><a href="">境外支付</a></li>
+				<li><a href="">配送说明</a></li>
+				<li><a href="">配送范围</a></li>
+				<li><a href="">订单查询</a></li>
+				<li><a href="">取消订单</a></li>
+				<li><a href="">补交货款</a></li>
+				<li><a href="">营私条款</a></li>
+				<li><a href="">安全条款</a></li>
+			</ul>
+		</div>
+		<div id="fotBox2">
+		    <h2>热门咨询</h2>
+			<ul>
+				<li><a href="">购玫网购物流程</a></li>
+				<li><a href="">网购订单演示</a></li>
+				<li><a href="">配送城市范围</a></li>
+				<li><a href="">购玫网售后服务怎么样？</a></li>
+				<li><a href="">提前多久下订单</a></li>
+			</ul>
+			
+		</div>
+		<div id="fotBox3">
+			<h2>同城鲜花专区</h2>
+			<ul>
+				<li><a href="">深圳鲜花</a></li>
+				<li><a href="">北京鲜花</a></li>
+				<li><a href="">上海鲜花</a></li>
+				<li><a href="">广州鲜花</a></li>
+				<li><a href="">重庆鲜花</a></li>
+				<li><a href="">天津鲜花</a></li>
+				<li><a href="">成都鲜花</a></li>
+				<li><a href="">西安鲜花</a></li>
+				<li><a href="">武汉鲜花</a></li>
+				<li><a href="">南京鲜花</a></li>
+				<li><a href="">厦门鲜花</a></li>
+				<li><a href="">更多城市</a></li>
+			</ul>
+			
+		</div>
+		<div id="fotBox4">
+			<h2>联系我们</h2>
+			<ul>
+				<li>全国订购热线：400-889-8188</li>
+				<li>在线客服</li>
+				<li>24小时在线订购</li>
+				<li>客服工作时间：8:00-21:00</li>
+				<li>E-mail：kefu@goumei.com</li>
+			</ul>
+		</div>
+	</div>	
+
+</footer>
+<div id="safe">
+	<ul id="securi" class="clear">
+		<li><a href=""><img src="img/cxwz.gif" alt="" /></a></li>
+		<li><a href=""><img src="img/cxwz.png" alt="" /></a></li>
+		<li><a href=""><img src="img/smyz.gif" alt="" /></a></li>
+		<li><a href=""><img src="img/songhua.png" alt="" /></a></li>
+		<li><a href=""><img src="img/zfb.gif" alt="" /></a></li>
+		<li><a href=""><img src="img/100.jpg" alt="" /></a></li>
+		<li><a href=""><img src="img/gongan.png" alt="" /></a></li>
+	</ul>
+	<div id="state">
+         <ul>
+         	<li>
+         		<br/>
+         	    中国花卉协会会员  电子商务协会会员 ICP经营许可证：京010-25814514 京ICP备0102145号 	copyright©2001-2017
+            </li>
+         	<li>
+                                                 购玫网 （中国鲜花礼品网） www.goumei.com 北京市****限公司 中国鲜花网领先品牌，鲜花速递专家！
+         	</li>
+         	<br/>
+         </ul>
+	</div>
+	<div id="friendLink">
+		<ul class="clear">
+			<li>友链</li>
+			<li><a href="">装修网</a></li>
+			<li><a href="">淘宝网</a></li>
+			<li><a href="">机友网</a></li>
+			<li><a href="">当当网</a></li>
+			<li><a href="">链家地产</a></li>
+			<li><a href="">新三板</a></li>
+			<li><a href="">装修网</a></li>
+		</ul>
+	</div>
+</div>
+
 
 
 </body>
@@ -515,7 +1174,6 @@ function move(obj,json,fn){  	// 属性值可以不加px 透明度是用0-1之�
     },30)
 
 }
-
 
 
 
