@@ -56,7 +56,7 @@ em,i,b,strong{font-style:normal;font-weight:normal;}
 #teleCode span{display:block;text-align:center;font-size:10px;width:100%;}
 #serve{width:100px;height:130px;background:#fff;position:absolute;z-index:10;display:none;}
 #serve a{line-height:16px;color:#666;}
-#shoppingBord{width:200px;height:100px;position:absolute;background:#fff;display:none;border:1px solid #CCCCCC;border-top:none;}
+#shoppingBord{width:200px;height:100px;position:absolute;background:#fff;z-index:10;display:none;border:1px solid #CCCCCC;border-top:none;}
 #shoppingBord div{width:100%;text-align:center;margin:10px 0 0 0;}
 #shoppingBord a:hover{color:red;}
 
@@ -163,8 +163,68 @@ $(function(){
     $("#sidebar5").mouseleave(function(){
 		$("#innerShow2").slideUp(10);
     });  
+    $("#log").click(function(){
+    	$(this).css("border-bottom","2px solid #e40202");
+    	$("#reg").css("border-bottom","2px solid #ccc");
+    });
+
+    $("#reg>a").click(function(){
+    	$("#reg").css("border-bottom","2px solid #e40202");
+    	$("#log").css("border-bottom","2px solid #ccc");
+    });
 
 
+    $("#userPass").blur(function(){
+		var reg=/^[0-9a-zA-Z]{6,20}$/;
+		var str=$("#userPass").val();
+		if(reg.test(str)==true){
+			$("#showPass").html("&#xe6ad;");
+			$("#showPass").css("color","green");
+			}else{
+			$("#showPass").html("&#xe69a;");	
+			$("#showPass").css("color","red");
+				}
+		}
+    );
+    
+/*    
+     $("#userName").blur(function(){
+		var reg=/^1\d{10}$/;
+		var str=$("#userName").val();
+		if(reg.test(str)==true){
+			$("#showUser").html("&#xe6ad;");
+			$("#showUser").css("color","green");
+			}else{
+			$("#showUser").html("&#xe69a;");
+			$("#showUser").css("color","red");	
+				}
+	});*/
+
+/*    $("#userName").blur(function(){
+		var reg=/^\w+@\w+\.(com|cn|com\.cn|net)$/;
+		var str=$("Email").val();
+		if(reg.test(str)==true){
+			$("#showUser").html("&#xe6ad;");
+			$("#showUser").css("color","green");
+			}else{
+			$("#showUser").html("&#xe69a;");
+			$("#showUser").css("color","red");			
+				}
+	});*/
+	$("#userName").blur(function(){
+			//邮箱： ****@***.com；开始是数字字母下划线@开始是数字字母下划线.com或者net或者cn
+			var reg = /^\w+@\w+\.(com|net|cn|com\.cn)$/;
+			var str= $("#userName").val();			
+			if(reg.test(str)){
+				$("#showUser").html("&#xe6ad;");
+				$("#showUser").css("color","green");
+			}else{
+				$("#showUser").html("&#xe69a;");
+				$("#showUser").css("color","red");
+			}
+	});
+   
+  
 });
 
 
@@ -192,7 +252,7 @@ $(function(){
                  	     </ul> 
                          <ul class="u1">
                                 <li class="l1"><a href="#">您好！请登录</a></li>
-                                <li class="l2"><a href="#">注册</a></li>
+                                <li class="l2"><a href="reg.html">注册</a></li>
                                 <li class="l3"><a href="#">订单查询</a></li>
                                 <li class="l7"><a href="#">我的购玫</a></li>
                                 <li class="l4"><a href="#">客户服务<div class="sj"></div></a>
@@ -219,7 +279,7 @@ $(function(){
         <div class="headerlogo">
                <div class="mid">
                      <div class="logo">
-                             <h1 title=""><a href="#"><img src="img/logo1.png"></a></h1>
+                             <h1 title=""><a href="index.html"><img src="img/logo1.png"></a></h1>
                              
                      </div>
                      <div class="search">
@@ -244,24 +304,30 @@ $(function(){
 </div>	
 
 <div id="logInBack">
-	<img src="img/login_bg.jpg" alt="" />
+
 	<div id="login">
 	    <div id="con"> 
 		     <ul id="chos" class="clear">
 		     	<li id="log"><a href="">登录</a></li>
-		     	<li id="log"><a href="">注册</a></li>
+		     	<li id="reg"><a href="">注册</a></li>
+		     	<li id="emptyBox1"></li>
 		     </ul>
-		</div>     
+		     <div id="changeLog" class="clear"><a href="">使用手机验证码登录</a></div>
+		     <div id="user" class="clear"><div class="iconfont fon">&#xe62e;</div><input id="userName" type="text" value="" name="user" placeholder=" E-mail地址/手机号码"/><span  id="showUser" class="iconfont fon"></span></div>
+		     <div id="pass" class="clear"><div class="iconfont fon">&#xf0109;</div><input id="userPass" type="password" value="" name="pass" placeholder=" 用户密码"/><span id="showPass" class="iconfont fon"></span></div>
+		     <div id="forgetPass" class="clear"><a href="">忘记密码</a></div>
+             <div id="sub" class="clear"><input type="submit" value="登  录"/></div> 
+             <ul id="tools" class="clear">
+             	<li><a href="">微信　|</a></li>
+             	<li><a href="">QQ　|</a></li>
+             	<li><a href="">支付宝 </a></li>
+             </ul>
+	    </div>     
 	</div>
 	
 	
 	
 </div>
-
-
-
-
-
 
 <div id="main">
 
@@ -320,7 +386,6 @@ $(function(){
 </body>
 </html>
 <script type="text/javascript">
-
 
 
 
