@@ -1,0 +1,320 @@
+@charset "utf-8";
+#main{
+    width:1200px;
+    margin:0 auto;
+}
+#tag{
+    height:75px;
+    overflow: hidden;
+    
+    li{
+        margin:30px 0 0 10px;
+        width:120px;
+        float:left;
+        text-align: center;
+        border-right:1px solid #ccc;
+        a{
+            color:#666;
+            font-size:14px;
+        }
+        a:hover{
+            color:#e40202;
+        }
+    }
+    #choseGM{
+        border-right:none;
+    }
+}
+
+footer{
+    
+    height:210px;
+    width:100%;
+    background:#f2f2f2;
+    font-size:14px;
+    #cont{
+        
+        width:1200px;
+        margin:0 auto;
+        overflow: hidden;
+
+        li{
+            line-height:20px;
+        }
+        h2{
+            margin-bottom:15px;
+        }
+        div{
+            width:270px;
+            height:150px;
+            float:left;
+            margin:30px 0 0 20px;
+            border-right:1px solid #ccc;
+            h2{
+                font-size:14px;
+            
+            
+            }    
+        }
+        #fotBox1{
+            li{
+                width:90px;
+                float:left;
+            }
+        }
+        #fotBox3{
+            li{
+                width:90px;
+                float:left;
+            }
+        }
+        #fotBox4{
+            border-right:none;
+        }
+        a{
+            color:#666;
+        }
+        a:hover{
+            color:#e40202;
+        }
+    }
+}
+
+#safe{
+    width:1200px;
+    margin:0 auto;
+    height:220px;
+    #securi{
+        height:70px;
+        padding-left:40px;
+        width:100%;
+        li{
+            float: left;
+            margin:21px;
+            img{
+                height:40px;
+            }
+        }
+    }
+    #state{
+       border-bottom: 1px solid #CCCCCC;
+        ul{
+            li{
+                 width:100%;
+                 font-size: 12px; 
+                 line-height:20px;
+                 margin:0px; 
+                 text-align: center; 
+                 color:#666666;                     
+            }
+            
+        }
+      
+    }
+    #friendLink{
+        ul{
+            padding:20px 0 0 250px;
+            li{
+                float:left;
+                margin:0 20px;
+                a{
+                    font-size:14px;
+                    color:#666;
+                    }
+                a:hover{
+                    color:#e40202;
+                }    
+            }
+        }
+    }
+    
+}
+#logInBack{
+        width:1370px;
+        height:480px;
+        margin:0 auto;
+        //background:#990000;
+        background-image:url(../img/login_bg.jpg);
+        background-position:-400px 0;
+        position: relative;
+        z-index:0;
+        #login{
+            width:480px;
+            height:400px;
+            background: #fff;
+      
+            position: absolute;
+            right:230px;
+            bottom:40px;
+            box-shadow: 0px 0px 8px #ccc;
+            #con{
+                width:440px;
+                margin:40px auto 0;
+               #changeLog{
+                   height:20px;
+                   padding:10px 10px;
+                   a{
+                       float:right;               
+                       font-size:12px;
+                       color:#666;
+                   }
+                   a:hover{
+                       color: #e40202;
+                   }
+               }
+              
+                #chos{
+                    li{
+                        float:left;
+                        text-align: center;
+                        border-bottom:2px solid #CCCCCC;
+                        height:30px;
+                        line-height:20px;
+                        cursor:pointer;
+                        a{
+                            color:#444444;
+                            font-size:18px;
+                            display: block;
+                            width:100%;
+                            height:100%;
+                        }
+                        a:hover{color:#e40202;}
+                    }
+                    #log{width:95px;}
+                    #log:hover{border-bottom:2px solid #e40202;}
+                    #reg{width:95px;}
+                    #reg:hover{border-bottom:2px solid #e40202;}
+                    #emptyBox1{
+                            width:250px;
+                    }
+                }
+                
+                input{
+                    float:left;
+                    width:250px;
+                    height:35px;
+                    font-size:16px;
+                    margin-left:10px;
+                }
+                input[type="submit"]{
+                    width:310px;
+                    height:45px;
+                    background:#e40202;
+                    color:#fff;
+                    border:none;
+                    border-radius:5px;
+                    font-size:20px;
+                    font-family:"微软雅黑";
+                    margin-left:60px;
+                    outline:none;
+                }
+                input[type="submit"]:hover{
+                    background:#ce0202;
+                }
+               
+                #user{
+                    margin-bottom:10px;
+                    margin-left:50px;
+                    div{
+                         float:left;
+                         width:40px;
+                         height:40px;
+                         font-size:30px;
+                        text-align: center;
+                        line-height:40px;
+                    }
+                }
+                #pass{
+                    margin-left:50px;
+                    margin-bottom:10px;
+                    div{
+                         float:left;
+                         width:40px;
+                         height:40px;
+                         font-size:30px;
+                         text-align: center;
+                        line-height:40px;                         
+                    }
+                    
+                }
+                #surePass{
+                    margin-left:50px;
+                    div{
+                         float:left;
+                         width:40px;
+                         height:40px;
+                         font-size:30px;
+                         text-align: center;
+                        line-height:40px;                         
+                    }
+                    
+                }
+                #checkCodeByNum{
+                    padding:10px 0 0 50px;
+                    overflow: hidden;
+                     input{
+                         width:80px;
+                         
+                     }
+                     input[type="button"]{
+                         background:transparent;
+                         border:none;
+                         font-family:"微软雅黑";
+                         outline:none;
+                         width:60px;
+                     }
+                     #checkImg{
+                         height:30px;
+                         width:120px;
+                            
+                       
+                         img{
+                             float:left;
+                             margin-right:0px;
+                             height:30px;
+                         }
+                     }
+                }
+                
+                
+                
+                
+            }
+        }
+}
+
+#showUser{
+    
+     float:left;
+     display:block;
+     font-size:30px;
+     line-height:30px;
+     padding:5px 0 0 5px;
+}   
+
+#showPass{
+     float:left;
+     display:block;
+     font-size:30px;
+     line-height:30px;
+     padding:5px 0 0 5px;
+     
+}
+#showSurePass{
+     float:left;
+     display:block;
+     font-size:30px;
+     line-height:30px;
+     padding:5px 0 0 5px;    
+}
+
+
+#sub{
+    padding-top:20px;
+}
+
+#checkImg{display:inline-block;width:120px;height:30px;font-size:0;position:relative;top:5px;}
+#innerImg{width:30px;height:30px;}
+
+
+
