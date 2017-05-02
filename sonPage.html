@@ -1,0 +1,740 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="font/font_8cnzodx1rzxjq0k9/iconfont.css">
+<link rel="stylesheet" type="text/css" href="font/font2/iconfont.css">
+<link rel="stylesheet" type="text/css" href="font/font3/iconfont.css">
+<link rel="stylesheet" type="text/css" href="css/goodsDetail.css">
+<link rel="stylesheet" href="css/sonPage.css">
+
+
+<style>
+body,html{width:100%;font-family:Microsoft Yahei;overflow-X:hidden;}
+img{border:0;display:block;}
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,body,input,dd{margin:0;padding:0;}
+li{list-style:none;}
+*{margin:0;padding:0;}
+a{text-decoration:none;}
+em,i,b,strong{font-style:normal;font-weight:normal;}
+.clear:after{content:"";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
+.left{float:left;}
+.right{float:right;}
+/*------------------------------------------------以上为重置样式*/
+.headertop{height:25px;width:100%;border-bottom:1px solid #e5e5e5;background-color:#f2f2f2;font-size:11px;}
+.top{width:1190px;margin:0 auto;}
+.header .u1{float:right;/*margin-right:10px;*/}
+.header .u1 li{float:left;}
+.header .u1 a{display:block;height:25px;text-align:center;line-height:25px;color:#666;}
+.header .u1 .l1 a{width:100px;color:#e40202;}
+.header .u1 .l2 a{width:60px;}
+.header .u1 .l2 a:hover{color:#e40202;}
+.header .u1 .l3 a{width:80px;}
+.header .u1 .l4 a{width:100px;}
+.header .u1 .l4{position:relative;}
+#serve a:hover{color:#e40202;}
+.header .u1 a:hover{color:#E40202;}
+.header .u1 .l5 a{width:100px;}
+.header .u1 .l5{position:relative;}
+.header .u1 .l7 a{width:80px;}
+
+/*.header .u1 li:hover{background:#e8e8e8;}*/
+.sj{width:0;height:0;border:5px solid transparent;border-top-color:#696969;float:right;margin:10px 10px 0 -10px;}
+#u2 li{float:left;}
+#u2 li a{display:block;text-decoration: none;color:#666;line-height:25px;}
+#u2 li a i{color:#c50101;}
+#u2 li a:hover{color:#e40202;}
+#Lef2{position:relative;z-index:10;width:100px;text-align:center;}
+#Lef3{position:relative;z-index:10;width:100px;text-align:center;}
+#Lef1{padding:0 20px 0 20px;}
+
+#weiChatCode{position:absolute;width:120px;height:160px;background:#fff;display:none;}
+#weiChatCode img{width:100px;height:100px;margin:15px 10px 5px 10px;}
+#weiChatCode span{display:block;text-align:center;font-size:10px;width:100%;}
+
+#teleCode{position:absolute;width:120px;height:160px;background:#fff;display:none;}
+#teleCode img{width:100px;height:100px;margin:15px 10px 5px 10px;}
+#teleCode span{display:block;text-align:center;font-size:10px;width:100%;}
+#serve{width:100px;height:130px;background:#fff;position:absolute;z-index:10;display:none;}
+#serve a{line-height:16px;color:#666;}
+#shoppingBord{width:200px;height:100px;position:absolute;background:#fff;display:none;border:1px solid #CCCCCC;border-top:none;}
+#shoppingBord div{width:100%;text-align:center;margin:10px 0 0 0;}
+#shoppingBord a:hover{color:red;}
+
+
+/*---------------------以上为头部样式------------------------*/
+.headerlogo{height:77px;width:100%;}
+.logo{height:77px;width:540px;}
+.logo a,p{float:left;font-size:18px;}
+.logo a img{border:none;height:70px;}
+.mid{width:1190px;margin:0 auto;}
+.logo a{margin-top:6px;}
+.logo p{margin:41px 0 0 14px;}
+
+
+.search{width:400px;height:77px;position:relative;float:left;}
+.logo,.search{float:left;overflow:hidden;}
+.search input{float:left;font-size:17px;}
+
+.search input[type="text"]{font-size:16px;width:272px;height:26px;border:2px solid #d5d5d5;border-right:none;margin-top:16px;outline:none;}
+.search input[type="submit"]{width:65px;height:30px;border:none;background-color:red;color:#fff;margin-top:16px;outline:none;}
+form{overflow:hidden;}
+.search ul{position:absolute;left:40px;top:50px;font-size:11px;}
+.search p{font-size:11px;position:absolute;left:0px;top:53px;}
+.search ul a{display:block;padding:0 4px;color:#888888;}
+.search ul a:hover{color:#F00;}
+/*---------------------以上为搜索栏----------------------*/
+
+#teleId{float:left;}
+#teleId a{color:#e40202;font-size:16px;line-height:76px;}
+#teleId i{color:#e40202;font-size:22px;}
+
+
+
+/*----------------------------以上为客服和电话----------*/
+.headerbot{height:35px;width:100%;}
+.nav .b1 h4 a{color:#fff;display:/*inline-*/block;padding:6px 0 0 10px;height:29px;width:210px;text-align: center;}
+.b1{background:#2e2e2e;}
+.nav{width:1190px;margin:0 auto;position:relative;}
+.nav .b2 li{float:left;line-height:35px;}
+.b2 li a{display:block;height:35px;padding:0px 17px 0 13px;color:#2e2e2e;}
+.nav .b1,.b2{float:left;}
+/*.b2 .l1{height:35px;width:66px;background:#333;}*/
+.nav .b2 a:hover{color:#e40202;}
+.b2 ul{margin-left:20px;}
+.b3 li{float:left;}
+.b3 a{display:block;height:27px;padding:8px 12px 0 0;font-size:15px;color:#fff;}
+.b3 ul{margin-left:20px;}
+.b3 tip{float:right;}
+
+
+.nav .box2{position:absolute;z-index:5;top:35px;width:220px;height:auto;background:rgba(255,244,244,.9);border-bottom:5px solid #e40202;display:none;padding-bottom:20px;}
+
+
+
+
+    ul,li{
+        list-style-type:none;
+    }
+    #wrap{
+        width:1370px;
+        height: 430px;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
+    ul#slide{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 9999px;
+    }
+    #slide li{
+        float: left;
+        width: 1370px;
+        height: 430px;
+        z-index:-10;
+    }
+    #prev,#next{
+        width:70px;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        font-size: 40px;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 120px;
+        text-align: center;
+        text-decoration: none;
+        display: none;
+    }
+    #wrap:hover #prev,#wrap:hover #next{
+        display: block;
+    }
+    #prev{
+        left: 0;
+    }
+    #next{
+        right: 0;
+    }
+    #list{
+        position: absolute;
+        bottom: 10px;
+        width:250px;
+        right:40%;
+    }
+    #list li{
+        width: 40px;
+        height: 4px;
+        background:rgba(0,0,0,.3);
+        border-radius: 2px;
+        float:left;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    #list li.active{
+        background-color:rgba(255,255,255,.8);
+    }
+    #slide li img{
+
+        width:1370px;
+        height:430px;
+    }
+    #bannerFloatImg{position:absolute;top:0px;right:140px;z-index:20;}
+    #bannerFloatImg li{width:200px;height:140px;margin:0 0 5px 0;transition:.2s linear;}
+    #bannerFloatImg li img{width:200px;height:140px;}
+    #bannerFloatImg li:hover{transform: translateX(-20px);}
+  
+  #use{margin:5px 0 0 10px;}
+  #use li{float:left;width:50px;text-align:center;font-size:12px;line-height:20px;margin-right:15px;}
+  #use a:hover{color:#e40202;}
+  #use a{color:#666666;}
+  .subnav h2{font-size:14px;margin:10px 0 0 10px;color:#e40202;}
+  #sidebar1,#sidebar2,#sidebar3,#sidebar4{border-bottom:1px solid #ccc;padding-bottom:10px;}
+  #sidebar2 #use li{float:left;width:40px;text-align:center;font-size:12px;line-height:20px;margin-right:10px;}
+  #sidebar3 #use li{float:left;width:40px;text-align:center;font-size:12px;line-height:20px;margin-right:5px;}
+  #sidebar4,#sidebar5{position:relative;}
+  #innerShow1{position:absolute;width:600px;height:425px;top:-284px;left:220px;background:rgba(255,244,244,.8);display:none;}
+  #innerShow2{position:absolute;width:600px;height:425px;top:-349px;left:220px;background:rgba(255,244,244,.8);display:none;}
+  #sideBarRight{width:33px;height:100%;position:fixed;right:0px;background:rgba(0,0,0,.7);z-index:40;}
+
+
+
+.menu { position: absolute; left: 0; top: 0; width: 1380px; height: 100%; background-color: #ccc; font-family:"微软雅黑";}
+.menuc { height: 100%; overflow-x: hidden; overflow-y: auto;}
+.menu span { display: block; height: 100px;}
+.menu a { display: block; height: 40px; margin: 0 0 1px 2px; padding-left: 10px; line-height: 40px; font-size: 14px; color: #333; text-decoration: none;}
+.menu a:hover { background-color: #eee;}
+.menu .cur { color: #000; background-color: #fff !important;}
+.main { height: 100%;}
+.mianc { position: relative; height: 100%; overflow-x: hidden; overflow-y: auto;}
+.main h1 { width: 900px; margin: 40px auto; font: 32px "Microsoft Yahei";}
+.explain, .sucaihuo-explain { margin-top: 20px; font-size: 14px; text-align: center; color: #f50;}
+
+.vad { margin: 50px 0 5px; font-family: Consolas,arial,宋体,sans-serif; text-align:center;}
+.vad a { display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; padding: 0 50px; font-size: 14px; text-align:center; color:#eee; text-decoration: none; background-color: #222;}
+.vad a:hover { color: #fff; background-color: #000;}
+.thead { width: 728px; height: 90px; margin: 0 auto; border-bottom: 40px solid #fff;}
+
+.ck-slide { width: 700px; height: 320px; margin: 0 auto;}
+.ck-slide ul.ck-slide-wrapper { height: 320px;}
+
+</style>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+	
+$(function(){
+
+	$("#Lef2").mouseenter(function(){
+		$("#Lef2").css("background-color","#fff");
+		$("#weiChatCode").slideDown(200);
+		
+	});
+	$("#Lef2").mouseleave(function(){
+		$("#Lef2").css("background-color","#f2f2f2");
+		$("#weiChatCode").slideUp(200);	
+	});
+	
+	$("#Lef3").mouseenter(function(){
+		$("#Lef3").css("background-color","#fff");
+		$("#teleCode").slideDown(200);	
+	});
+	$("#Lef3").mouseleave(function(){
+		$("#Lef3").css("background-color","#f2f2f2");
+		$("#teleCode").slideUp(200);	
+	});
+	$(".l4").mouseenter(function(){
+		$(".l4").css("background-color","#fff");
+		$("#serve").slideDown(200);
+    });
+    $(".l4").mouseleave(function(){
+    	$(".l4").css("background-color","#f2f2f2");
+		$("#serve").slideUp(200);
+    });
+    $(".l5").mouseenter(function(){
+    	$(".l5").css("background-color","#fff");
+		$("#shoppingBord").slideDown(200);
+    });
+    $(".l5").mouseleave(function(){
+    	$(".l5").css("background-color","#f2f2f2");
+		$("#shoppingBord").slideUp(200);
+    });
+    $("#sidebar4").mouseenter(function(){
+
+		$("#innerShow1").slideDown(10);
+    });
+    $("#sidebar4").mouseleave(function(){
+		$("#innerShow1").slideUp(10);
+    });
+     $("#sidebar5").mouseenter(function(){
+		$("#innerShow2").slideDown(10);
+    });
+    $("#sidebar5").mouseleave(function(){
+		$("#innerShow2").slideUp(10);
+    });  
+    $(".b1").mouseenter(function(){
+		$(".box2").slideDown(500);
+    });
+    $(".b1").mouseleave(function(){
+		$(".box2").slideUp(500);
+    });
+    
+    $("#weiChatBuy").mouseover(function(){
+    	$("#slideDiv").slideDown(400);
+    });
+    $("#weiChatBuy").mouseout(function(){
+    	$("#slideDiv").slideUp(400);
+    });
+
+
+
+});
+
+
+</script>
+</head>
+<body>
+	<div id="sideBarRight">
+		<ul id="sideBarR">
+			<li id="B1"><a href="" class="iconfont fon">&#xf00f3;</a>
+				<div>
+					<div id="box1">
+						<div id="photoImg1"><img src="img/banner-vaseflower.jpg" alt="" /></div>
+						<ul class="clear">
+							<li>你好！请</li>
+							<li><a href="logIn.html">登录　|</a></li>
+							<li><a href="reg.html">注册</a></li>
+						</ul>
+					</div>
+					<div id="box2">
+						<div><a href="" class="iconfont fon">&#xe630;我的订单</a></div>
+						
+					</div>
+				</div>
+			</li>
+			<li id="B2"><a href="" class="iconfont fon">&#x344b;<e id="tip">购物车</e><span id="buySum">0</span></a></li>
+			<li id="B3"><a href="" class="iconfont fon">&#xf0054;</a>
+				<div><a href="">我的关注</a></div>
+			</li>
+			<li id="B4"><a href="" class="iconfont fon">&#x3466;</a>
+				<div><a href="">专属特卖</a></div>
+			</li>
+			<li id="B5"><a href="" class="iconfont fon">&#xf012b;</a>
+				<div><a href="">400-562-8888</a></div>
+			</li>
+			<li id="B6"><a href="" class="iconfont fon">&#x3469;</a>
+				<div><a href="">在线客服</a></div>
+			</li>
+		</ul>
+		<ul id="slideBarBot">
+			<li><a href="" class="iconfont fon">&#xf010a;</a>
+				<div id="secCode">
+					<img src="img/WeiChatLogo.png" id="code1" alt="" /><img id="code2" src="img/WeiChatLogo.png" alt="" />
+				    <div>扫码关注！更多惊喜等着你！</div>
+				</div>
+				
+			</li>
+			<li><a href="" class="iconfont fon">&#xe631;</a>
+				<div id="back">
+					功能反馈
+				</div>
+				
+			</li>
+			<li><a href="" class="iconfont fon">&#xf012c;</a>
+				<div id="home">
+					返回顶部
+				</div>
+				
+			</li>			
+		</ul>
+		
+	</div>
+	<div class="header">
+        <div class="headertop">
+                 <div class="top">
+                 	     <ul id="u2">
+                 	    	<li id="Lef1"><a href="#"><i class="iconfont fon">&#xf0113;</i>收藏购玫</a></li>
+                 	    	<li id="Lef2"><a href="#"><i class="iconfont fon">&#xf0106;</i>关注微信</a>
+                 	    		<div id="weiChatCode">
+                 	    			<img src="img/WeiChatLogo.png" alt="" />
+                 	    		    <span>扫码关注更多</span>
+                 	    		</div>
+                 	    	</li>
+                 	    	<li id="Lef3"><a href="#"><i class="iconfont fon">&#xe607;</i>手机购玫</a>
+                 	    		<div id="teleCode">
+                 	    			<img src="img/WeiChatLogo.png" alt="" />
+                 	    		    <span>掌握更多精彩</span>
+                 	    		</div>
+                 	    	</li>
+                 	     </ul> 
+                         <ul class="u1">
+                                <li class="l1"><a href="logIn.html">您好！请登录</a></li>
+                                <li class="l2"><a href="reg.html">注册</a></li>
+                                <li class="l3"><a href="#">订单查询</a></li>
+                                <li class="l7"><a href="#">我的购玫</a></li>
+                                <li class="l4"><a href="#">客户服务<div class="sj"></div></a>
+                                
+                            		<ul id="serve">
+                            			<br/>
+                            			<li><a href="#">在线付款</a></li>
+                            			<li><a href="#">帮助中心</a></li>
+                            			<li><a href="#">售后服务</a></li>
+                            			<li><a href="#">留言反馈</a></li>
+                            		</ul>
+                                		
+                                </li>
+                                <li class="l5"><a href="#"><i class="iconfont fon">&#xf003f;</i>购物车<div class="sj"></div></a>
+                                	<div id="shoppingBord">
+                                		<div>亲(=^ ^=)<a href="">快去选购吧！</a></div>
+                                	</div>
+                                	
+                                </li>
+                                <li class="l6"><a href="#">鲜花品牌领导者</a></li>
+                         </ul>
+                  </div>
+        </div>
+        <div class="headerlogo">
+               <div class="mid">
+                     <div class="logo">
+                             <h1 title=""><a href="#"><img src="img/logo1.png"></a></h1>
+                             
+                     </div>
+                     <div class="search">
+                               <div class="sou">      
+                                     <form>
+                                           <input type="text"placeholder=" 苦水玫瑰"value=""/>
+                                           <input type="submit"value="搜索"/>
+                                     </form>
+                               </div>
+                               
+                              <p>热搜：</p>
+                                  
+                              <ul class="u1">
+                                      <li><a href="#">红玫瑰</a></li>
+                                      <li><a href="#">永生花</a></li>
+                                      <li><a href="#">生日鲜花</a></li>
+                                      <li><a href="#">礼品卡</a></li>
+                                      <li><a href="#">康乃馨</a></li>
+
+                              </ul>
+                              
+                     </div>
+                     <div class="tele">
+                           <div id="teleId">
+                           	
+                           	  <i class="iconfont fon">&#xf012b;</i><a href="#">400-889-8188</a> | <i class="iconfont fon">&#x3437;</i> <a href="#">在线客服</a>
+                           	
+                           </div>  
+                     </div>
+              </div> 
+        </div>
+        <div class="headerbot">
+                <div class="nav clear">
+                        <div class="b1">
+                                 <h4><a href="#" class="iconfont fon">永生花</a></h4>                               
+                        
+                        </div>
+                        <div class="b2">
+                               <ul class="clear">
+                               	       <li><a href="#">经典花盒</a></li>
+                                       <li class="l1"><a href="#">巨型玫瑰</a></li>
+                                       <li><a href="#">熏衣草</a></li>
+                                       <li><a href="#">永生瓶花</a></li>
+                                       <li><a href="#">特色永生花</a></li>
+                                       <li><a href="#">网站首页</a></li>
+                                     
+                               </ul>
+                        </div>
+                </div>
+        </div>   
+</div>	
+
+<div class="main">
+	<div class="mianc">
+
+
+		<style>
+		.ck-slide { width: 1380px; height: 320px; margin: 0 auto;}
+		.ck-slide ul.ck-slide-wrapper { height: 320px;}
+		</style>
+		
+		<div class="ck-slide">
+			<ul class="ck-slide-wrapper">
+				<li>
+					<a href="http://www.sucaihuo.com/"><img src="img/banner_song_01.jpg" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="http://www.sucaihuo.com/js/187.html"><img src="img/banner_song_03.jpg" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="javascript:"><img src="img/banner_song_04.jpg" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="javascript:"><img src="img/banner_song_05.jpg" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="javascript:"><img src="img/banner_song_s_02.jpg" alt=""></a>
+				</li>
+			</ul>
+			<a href="javascript:;" class="ctrl-slide ck-prev">上一张</a> <a href="javascript:;" class="ctrl-slide ck-next">下一张</a>
+			<div class="ck-slidebox">
+				<div class="slideWrap">
+					<ul class="dot-wrap">
+						<li class="current"><em>1</em></li>
+						<li><em>2</em></li>
+						<li><em>3</em></li>
+						<li><em>4</em></li>
+						<li><em>5</em></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.8.3.js"></script>
+		<script src="js/slide.js"></script>
+		<script>
+			$('.ck-slide').ckSlide({
+				autoPlay: true
+			});
+		</script>
+	</div>
+</div>
+	</div>
+</div>
+
+
+
+
+<div id="main">
+    <div id="falseFlower">
+    	<ul class="clear">
+    		<li class="leftMarNone"><a href=""><img src="img/falseFlo1.jpg" alt="" /></a></li>
+    		<li><a href=""><img src="img/falseFlo2.jpg" alt="" /></a></li>
+    		<li><a href=""><img src="img/falseFlo3.jpg" alt="" /></a></li>
+    		<li class="leftMarNone"><a href=""><img src="img/falseFlo4.jpg" alt="" /></a></li>
+    		<li><a href=""><img src="img/falseFlo5.jpg" alt="" /></a></li>
+    		<li><a href=""><img src="img/falseFlo6.jpg" alt="" /></a></li>
+    	</ul>
+    </div>
+    <div id="flowerMore">
+    	<a href="">查看全部永生花 ></a>
+    </div>
+    <div id="sonShowImg">
+    	<a href="">
+    		<img src="img/ysh_ysdcn_161116.jpg" alt="" />
+    	</a>
+    	
+    </div>
+	<div id="moreWrap">
+		<div id="titleRap">
+			<h3>经典花盒系列</h3>
+			<h4>进口厄瓜多尔玫瑰，自然天成，精湛花艺之作，永不凋谢</h4>
+			<a href="">　MORE+</a>
+		</div>
+		<div id="changeImg" class="clear">
+			<div id="leftImg"><a href=""><img src="img/flowersong_banner_01.jpg" alt="" /></a></div>
+			<div id="rightImg"> 
+			    <div href="" id="preBtn" class="iconfont fon">&#xf0115;</div>
+			    <div href="" id="nexBtn" class="iconfont fon">&#xf0116;</div>
+			    <ul id="smallImg" class="clear">
+                           <li id="box1" class="liImg"></li>
+                           <li id="box2" class="liImg"></li>
+                           <li id="box3" class="liImg"></li>
+                </ul>
+			    
+			</div>
+            <ul id="prices" class="clear">
+				<li><a href="">永生花盒· 永爱 特价促销 ￥288</a></li>
+				<li><a href="">永生花盒· 爱情海 特价促销 ￥298</a></li>
+				<li><a href="">永生花盒· 天使之心 特价促销 ￥388</a></li>
+	        </ul>
+		</div>
+     	
+	</div>
+
+	
+	
+	
+
+	
+	
+	<div id="label">
+		<ul class="clear">
+			<li><em class="iconfont fon">&#xf0178;</em><a href="">　订单实拍</a></li>
+			<li><em class="iconfont fon">&#xe667;</em><a href="">　环境保护</a></li>
+			<li><em class="iconfont fon">&#xe603;</em><a href="">　安全可靠</a></li>
+			<li><em class="iconfont fon">&#xe613;</em><a href="">　速递直达</a></li>
+			<li><em class="iconfont fon">&#xf010d;</em><a href="">　客户信赖</a></li>
+			<li><em class="iconfont fon">&#xe615;</em><a href="">　爱心捐赠</a></li>
+			<li><em class="iconfont fon">&#xe62a;</em><a href="">　3小时配送</a></li>
+			<li id="life"><a href=""><em class="iconfont fon">&#xf029d;</em></a></li>
+		</ul>
+		
+	</div>
+	
+	<ul id="tag" class="clear">
+		<li><a href="">网站首页</a></li>
+		<li><a href="">关于我们</a></li>
+		<li><a href="">媒体报道</a></li>
+		<li><a href="">联系方式</a></li>
+		<li><a href="">企业团购</a></li>
+		<li><a href="">花店加盟</a></li>
+		<li><a href="">友情链接</a></li>
+		<li><a href="">在线补款</a></li>
+		<li id="choseGM"><a href="">选择购玫</a></li>
+	</ul>
+	
+</div>
+<footer>
+	<div id="cont" class="clear">	
+		<div id="fotBox1">
+			<h2>客户服务</h2>
+			<ul>
+				<li><a href="">服务申明</a></li>
+				<li><a href="">支付说明</a></li>
+				<li><a href="">境外支付</a></li>
+				<li><a href="">配送说明</a></li>
+				<li><a href="">配送范围</a></li>
+				<li><a href="">订单查询</a></li>
+				<li><a href="">取消订单</a></li>
+				<li><a href="">补交货款</a></li>
+				<li><a href="">营私条款</a></li>
+				<li><a href="">安全条款</a></li>
+			</ul>
+		</div>
+		<div id="fotBox2">
+		    <h2>热门咨询</h2>
+			<ul>
+				<li><a href="">购玫网购物流程</a></li>
+				<li><a href="">网购订单演示</a></li>
+				<li><a href="">配送城市范围</a></li>
+				<li><a href="">购玫网售后服务怎么样？</a></li>
+				<li><a href="">提前多久下订单</a></li>
+			</ul>
+			
+		</div>
+		<div id="fotBox3">
+			<h2>同城鲜花专区</h2>
+			<ul>
+				<li><a href="">深圳鲜花</a></li>
+				<li><a href="">北京鲜花</a></li>
+				<li><a href="">上海鲜花</a></li>
+				<li><a href="">广州鲜花</a></li>
+				<li><a href="">重庆鲜花</a></li>
+				<li><a href="">天津鲜花</a></li>
+				<li><a href="">成都鲜花</a></li>
+				<li><a href="">西安鲜花</a></li>
+				<li><a href="">武汉鲜花</a></li>
+				<li><a href="">南京鲜花</a></li>
+				<li><a href="">厦门鲜花</a></li>
+				<li><a href="">更多城市</a></li>
+			</ul>
+			
+		</div>
+		<div id="fotBox4">
+			<h2>联系我们</h2>
+			<ul>
+				<li>全国订购热线：400-889-8188</li>
+				<li>在线客服</li>
+				<li>24小时在线订购</li>
+				<li>客服工作时间：8:00-21:00</li>
+				<li>E-mail：kefu@goumei.com</li>
+			</ul>
+		</div>
+	</div>	
+
+</footer>
+<div id="safe">
+	<ul id="securi" class="clear">
+		<li><a href=""><img src="img/cxwz.gif" alt="" /></a></li>
+		<li><a href=""><img src="img/cxwz.png" alt="" /></a></li>
+		<li><a href=""><img src="img/smyz.gif" alt="" /></a></li>
+		<li><a href=""><img src="img/songhua.png" alt="" /></a></li>
+		<li><a href=""><img src="img/zfb.gif" alt="" /></a></li>
+		<li><a href=""><img src="img/100.jpg" alt="" /></a></li>
+		<li><a href=""><img src="img/gongan.png" alt="" /></a></li>
+	</ul>
+	<div id="state">
+         <ul>
+         	<li>
+         		<br/>
+         	    中国花卉协会会员  电子商务协会会员 ICP经营许可证：京010-25814514 京ICP备0102145号 	copyright©2001-2017
+            </li>
+         	<li>
+                                                 购玫网 （中国鲜花礼品网） www.goumei.com 北京市****限公司 中国鲜花网领先品牌，鲜花速递专家！
+         	</li>
+         	<br/>
+         </ul>
+	</div>
+	<div id="friendLink">
+		<ul class="clear">
+			<li>友链</li>
+			<li><a href="">装修网</a></li>
+			<li><a href="">淘宝网</a></li>
+			<li><a href="">机友网</a></li>
+			<li><a href="">当当网</a></li>
+			<li><a href="">链家地产</a></li>
+			<li><a href="">新三板</a></li>
+			<li><a href="">装修网</a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+</body>
+</html>
+<script type="text/javascript">
+$('.ck-slide').ckSlide();
+   window.onload=function(){
+	     var count=0;
+         var liArr=document.getElementsByClassName("liImg");
+          for(var i=0;i<liArr.length;i++){
+			     liArr[i].style.backgroundImage="url(img/flowersong"+(i+1)+".jpg)"; 
+		  }
+		  
+		
+		 document.getElementById("nexBtn").onclick=function(){
+			 count++;
+			 if(count>6){
+				   count=0; 
+			  }
+			 for(var i=0;i<liArr.length;i++){
+				 liArr[i].style.backgroundImage="url(img/flowersong"+(i+1+count)+".jpg)";
+			 }		 
+		 }
+		 document.getElementById("preBtn").onclick=function(){
+				 count--;
+				 if(count<0){
+					   count=6; 
+				  }
+				 for(var i=0;i<liArr.length;i++){
+					 liArr[i].style.backgroundImage="url(img/flowersong"+(i+1+count)+".jpg)";
+				 }			
+		 }
+   }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
