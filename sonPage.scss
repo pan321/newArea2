@@ -1,0 +1,166 @@
+img { border: 0;}
+.ck-slide ul { margin: 0; padding: 0; list-style-type: none;}
+.ck-slide { position: relative; overflow: hidden;}
+.ck-slide ul.ck-slide-wrapper { position: absolute; top: 0; left: 0; z-index: 1; margin: 0; padding: 0;}
+.ck-slide ul.ck-slide-wrapper li { position: absolute;}
+.ck-slide .ck-prev, .ck-slide .ck-next { position: absolute; top: 50%; z-index: 2; width: 35px; height: 70px; margin-top: -35px; border-radius: 3px; opacity: .15; background: red; text-indent: -9999px; background-repeat: no-repeat; transition: opacity .2s linear 0s;}
+.ck-slide .ck-prev { left: 5px; background: url(../img/arrow-left.png) #000 50% no-repeat;}
+.ck-slide .ck-next { right: 155px; background: url(../img/arrow-right.png) #000 50% no-repeat;}
+.ck-slidebox { position: absolute; left: 47%; bottom: 12px; z-index: 30;}
+.ck-slidebox ul { height: 20px; padding: 0 4px; border-radius: 8px; }
+.ck-slidebox ul li { float: left; height: 12px; margin: 4px 4px;}
+.ck-slidebox ul li em { display: block; width: 12px; height: 12px; border-radius: 100%; background-color: #fff; text-indent: -9999px; cursor: pointer;}
+.ck-slidebox ul li.current em { background-color: #e40202;}
+.ck-slidebox ul li em:hover { background-color: #e40202;}
+#falseFlower{
+    ul{
+        li{
+            float:left;
+            margin:0 0 10px 9px;
+        }
+        .leftMarNone{
+            margin:0 0 10px 0;
+        }
+    }
+}
+#flowerMore{
+    text-align: center;
+    background:#f9f9f7;
+    line-height:35px;
+    margin-bottom: 10px;
+    a{
+        color:#666;
+    }
+    a:hover{
+        color:#e40202;
+    }
+}
+
+#sonShowImg{
+    margin-bottom: 30px;
+}
+#moreWrap{
+    overflow: hidden;
+    #titleRap{
+        position: relative;
+        border-bottom: 4px solid #ccc;
+        padding-bottom:10px;
+        h3,h4{
+            font-weight:normal;
+            color:#666;
+        }
+        h4{
+            font-size:14px;
+        }
+        a{
+            display: block;
+            width:80px;
+            height:25px;
+            background:#444444;
+            color:#fff;
+            line-height: 25px;
+            position: absolute;
+            right:2px;
+            top:10px;
+        }
+    }
+    #changeImg{
+        margin-top:20px;
+        position: relative;
+        div{
+            float:left;
+        }
+        #leftImg{
+        }
+        #rightImg{
+            width:830px;
+            height:350px;
+            //border: 1px solid #CCCCCC;
+            margin-left:40px;
+            position: relative;
+            #preBtn{
+                display: block;
+                width:50px;
+                height:50px;
+                color:#666;
+                border-radius: 50%;
+                background:#EEEEEC;
+                font-size:40px;
+                text-align: center;
+                line-height: 50px;
+                position: absolute;
+                left:-25px;
+                top:155px;
+                cursor:pointer;
+            }
+            #nexBtn{
+                display: block;
+                width:50px;
+                height:50px;
+                color:#666;
+                border-radius: 50%;
+                background:#EEEEEC;
+                font-size:40px;
+                text-align: center;
+                line-height: 50px;
+                position: absolute;
+                right:-25px;
+                top:155px;
+                cursor:pointer;
+            }
+            #smallImg{
+                li{
+                    float:left;
+                    margin-left:22px;
+                    width:260px;
+                    height:350px;
+                    border:1px solid #ccc;    
+                }
+                li:first-child{
+                    margin-left:0px;
+                }
+            }
+        }
+        #prices{
+        position: absolute;
+        left:300px;
+        bottom:30px;
+        
+        li{
+            float:left;
+            width:262px;
+            text-align: center;
+            margin-left:25px;
+            a{
+                font-size:14px;
+                color:#666;
+            }
+            a:hover{
+                color:#e40202;
+            }
+        }
+
+    }        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
