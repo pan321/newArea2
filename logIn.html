@@ -173,20 +173,8 @@ $(function(){
     	$("#log").css("border-bottom","2px solid #ccc");
     });
 
+    var isTrue=true;
 
-    $("#userPass").blur(function(){
-		var reg=/^[0-9a-zA-Z]{6,20}$/;
-		var str=$("#userPass").val();
-		if(reg.test(str)==true){
-			$("#showPass").html("&#xe6ad;");
-			$("#showPass").css("color","green");
-			}else{
-			$("#showPass").html("&#xe69a;");	
-			$("#showPass").css("color","red");
-				}
-		}
-    );
-    
 /*    
      $("#userName").blur(function(){
 		var reg=/^1\d{10}$/;
@@ -211,18 +199,54 @@ $(function(){
 			$("#showUser").css("color","red");			
 				}
 	});*/
-	$("#userName").blur(function(){
+	if(isTrue){
+		$("#userName").blur(function(){
 			//邮箱： ****@***.com；开始是数字字母下划线@开始是数字字母下划线.com或者net或者cn
 			var reg = /^\w+@\w+\.(com|net|cn|com\.cn)$/;
-			var str= $("#userName").val();			
-			if(reg.test(str)){
+			var regs=/^1\d{10}$/;
+			var str= $("#userName").val();	
+			
+            $.get("exist.php",{"userName":$("#userName").val()},function(data){
+	         	if(data=="0"){
+	         		$("#logBtn").click(function(event){
+	         			event.preventDefault();
+	         		});	         		
+	         		isTrue=false;
+	         	}
+            });
+			
+			
+			if(reg.test(str)||regs.test(str)){
 				$("#showUser").html("&#xe6ad;");
 				$("#showUser").css("color","green");
 			}else{
+				isTrue=false;
 				$("#showUser").html("&#xe69a;");
 				$("#showUser").css("color","red");
 			}
-	});
+			
+	   });
+		
+	}
+	$("#userPass").blur(function(){
+		var reg=/^[0-9a-zA-Z]{6,20}$/;
+		var str=$("#userPass").val();
+		if(reg.test(str)==true){
+			isTrue=true;
+			$("#showPass").html("&#xe6ad;");
+			$("#showPass").css("color","green");
+			}else{
+				isTrue=false;
+			$("#showPass").html("&#xe69a;");	
+			$("#showPass").css("color","red");
+				}
+		}
+    );
+    $("#logBtn").click(function(){
+    	if(isTrue){
+    		location.href="index.html";
+    	}
+    });
    
   
 });
@@ -309,14 +333,14 @@ $(function(){
 	    <div id="con"> 
 		     <ul id="chos" class="clear">
 		     	<li id="log"><a href="">登录</a></li>
-		     	<li id="reg"><a href="">注册</a></li>
+		     	<li id="reg"><a href="reg.html">注册</a></li>
 		     	<li id="emptyBox1"></li>
 		     </ul>
 		     <div id="changeLog" class="clear"><a href="">使用手机验证码登录</a></div>
 		     <div id="user" class="clear"><div class="iconfont fon">&#xe62e;</div><input id="userName" type="text" value="" name="user" placeholder=" E-mail地址/手机号码"/><span  id="showUser" class="iconfont fon"></span></div>
 		     <div id="pass" class="clear"><div class="iconfont fon">&#xf0109;</div><input id="userPass" type="password" value="" name="pass" placeholder=" 用户密码"/><span id="showPass" class="iconfont fon"></span></div>
 		     <div id="forgetPass" class="clear"><a href="">忘记密码</a></div>
-             <div id="sub" class="clear"><input type="submit" value="登  录"/></div> 
+             <div id="sub" class="clear"><input type="submit" id="logBtn" value="登  录"/></div> 
              <ul id="tools" class="clear">
              	<li><a href="">微信　|</a></li>
              	<li><a href="">QQ　|</a></li>
