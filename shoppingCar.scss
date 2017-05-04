@@ -1,0 +1,308 @@
+@charset "utf-8";
+#main{
+    width:1200px;
+    margin:0 auto;
+}
+#tag{
+    height:75px;
+    overflow: hidden;
+    
+    li{
+        margin:30px 0 0 10px;
+        width:120px;
+        float:left;
+        text-align: center;
+        border-right:1px solid #ccc;
+        a{
+            color:#666;
+            font-size:14px;
+        }
+        a:hover{
+            color:#e40202;
+        }
+    }
+    #choseGM{
+        border-right:none;
+    }
+}
+
+footer{
+    
+    height:210px;
+    width:100%;
+    background:#f2f2f2;
+    font-size:14px;
+    #cont{
+        
+        width:1200px;
+        margin:0 auto;
+        overflow: hidden;
+
+        li{
+            line-height:20px;
+        }
+        h2{
+            margin-bottom:15px;
+        }
+        div{
+            width:270px;
+            height:150px;
+            float:left;
+            margin:30px 0 0 20px;
+            border-right:1px solid #ccc;
+            h2{
+                font-size:14px;
+            
+            
+            }    
+        }
+        #fotBox1{
+            li{
+                width:90px;
+                float:left;
+            }
+        }
+        #fotBox3{
+            li{
+                width:90px;
+                float:left;
+            }
+        }
+        #fotBox4{
+            border-right:none;
+        }
+        a{
+            color:#666;
+        }
+        a:hover{
+            color:#e40202;
+        }
+    }
+}
+
+#safe{
+    width:1200px;
+    margin:0 auto;
+    height:220px;
+    #securi{
+        height:70px;
+        padding-left:40px;
+        width:100%;
+        li{
+            float: left;
+            margin:21px;
+            img{
+                height:40px;
+            }
+        }
+    }
+    #state{
+       border-bottom: 1px solid #CCCCCC;
+        ul{
+            li{
+                 width:100%;
+                 font-size: 12px; 
+                 line-height:20px;
+                 margin:0px; 
+                 text-align: center; 
+                 color:#666666;                     
+            }
+            
+        }
+      
+    }
+    #friendLink{
+        ul{
+            padding:20px 0 0 250px;
+            li{
+                float:left;
+                margin:0 20px;
+                a{
+                    font-size:14px;
+                    color:#666;
+                    }
+                a:hover{
+                    color:#e40202;
+                }    
+            }
+        }
+    }
+    
+}
+
+#shoppingCont{
+    min-height: 100px;
+    width:1000px;
+    margin:0 auto;
+    
+    text-align: center;
+    #noneShopping{
+        border:1px solid #ccc;
+        display: block;
+        line-height:100px;
+        margin-bottom: 20px;
+        a{
+            color:#666;
+        }
+        
+    }
+    #sumMoney{
+        height:50px;
+        border:1px solid #ccc;
+        margin-bottom: 20px;
+        #sumBtn{
+            background:#e40202 ;
+            border:none;
+            color:#fff;
+            font-size:20px;
+            width:100px;
+            height:100%;
+            font-family: "微软雅黑";
+            font-weight:600;
+            float:right;
+            outline: none;
+            cursor: pointer;
+        }
+        #showSumMoney{
+            height:100%;
+            width:898px;
+            float:left;
+            #continueShop{
+                height:100%;
+                line-height:50px;
+                float: left;
+                margin-left:30px;
+                a{
+                    color:#666;
+                }
+                a:hover{
+                    color:#e40202;
+                }
+            }
+            #payFor{
+                width:200px;
+                height:100%;
+                float: right;
+                line-height: 50px;
+                em{
+                    color:#e40202;
+                    font-size:20px;
+                }
+            }
+        }
+    }
+    #others{
+        height:310px;
+        margin-bottom: 50px;
+        overflow: visible;
+        position: relative;
+        ul{
+            height:28px;
+            li{
+                float: left;
+                padding:4px 20px;
+                border: 1px solid #ccc;
+                margin-right:3px;
+                border-bottom: none;
+                cursor: pointer;
+                background:#fff;
+//              a{
+//                 
+//                  display: block;
+//                  width:100%;
+//                  height:100%;
+                font-size:14px;
+                color:#666;
+//              }               
+            }
+            li:first-child{
+                height:23px;
+                margin-top:-3px;
+            }
+            li:hover{
+                    color:#e40202;
+            }
+        }
+        #card{
+            
+            width:100%;
+            border:1px solid #ccc;
+            height:100%;
+            #othBtnL,#othBtnR{
+                font-size:40px;
+                color:#ccc;
+                cursor: pointer;
+                position: absolute;
+                top:170px;
+                opacity:0;
+            }
+            #othBtnL{
+                left:10px;
+            }
+            #othBtnR{
+                right:10px; 
+            }
+            #boxWrap1{
+                width:896px;
+                height:280px;
+                margin:15px auto;
+                //border:1px solid #ccc;
+                position: relative;
+                overflow: hidden;
+                ul{
+                    overflow: hidden;
+                    height:100%;
+                    position: absolute;
+                    li{
+                        padding:0px;
+                        margin:0px;
+                        height:280px;
+                        width:179px;
+                        border: none;
+                        float: left;
+                        overflow: hidden;
+                        img{
+                            width:150px;
+                            height:150px;
+                            margin:20px auto 0;
+                        }
+                        a{
+                            color:#666;
+                        }
+                        a:hover{
+                            color:#e40202;
+                        }
+                        h5{
+                            font-size:16px;
+                            color:#e40202;
+                        }
+                        input{
+                            width:107px;
+                            height:27px;
+                            text-align: center;
+                            background: #fff;
+                            border: 1px solid #ccc;
+                            margin-top:10px;
+                            outline:none;
+                            cursor: pointer;
+                        }
+                        input[type="button"]:hover{
+                            background:#e40202;
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #publicPraise{
+        li{
+            float: left;
+            margin-right:20px;
+        }
+        #lastPub{
+            margin-right:0px;
+        }
+    }
+    
+}

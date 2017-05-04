@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>无标题文档</title>
+<title>永生花</title>
 <link rel="stylesheet" type="text/css" href="font/font_8cnzodx1rzxjq0k9/iconfont.css">
 <link rel="stylesheet" type="text/css" href="font/font2/iconfont.css">
 <link rel="stylesheet" type="text/css" href="font/font3/iconfont.css">
@@ -287,7 +287,13 @@ $(function(){
     	$("#slideDiv").slideUp(400);
     });
 
-
+  //回到顶部
+  	$("#gohome").click(function(){
+		$("html,body").animate({scrollTop: 0}, 500);	
+	});
+    $("#home").click(function(){
+		$("html,body").animate({scrollTop: 0}, 500);	
+	});
 
 });
 
@@ -313,7 +319,7 @@ $(function(){
 					</div>
 				</div>
 			</li>
-			<li id="B2"><a href="" class="iconfont fon">&#x344b;<e id="tip">购物车</e><span id="buySum">0</span></a></li>
+			<li id="B2"><a href="shoppingCar.html" class="iconfont fon">&#x344b;<e id="tip">购物车</e><span id="buySum">0</span></a></li>
 			<li id="B3"><a href="" class="iconfont fon">&#xf0054;</a>
 				<div><a href="">我的关注</a></div>
 			</li>
@@ -341,7 +347,7 @@ $(function(){
 				</div>
 				
 			</li>
-			<li><a href="" class="iconfont fon">&#xf012c;</a>
+			<li><a id="gohome" class="iconfont fon">&#xf012c;</a>
 				<div id="home">
 					返回顶部
 				</div>
@@ -384,9 +390,9 @@ $(function(){
                             		</ul>
                                 		
                                 </li>
-                                <li class="l5"><a href="#"><i class="iconfont fon">&#xf003f;</i>购物车<div class="sj"></div></a>
+                                <li class="l5"><a href="shoppingCar.html"><i class="iconfont fon">&#xf003f;</i>购物车<div class="sj"></div></a>
                                 	<div id="shoppingBord">
-                                		<div>亲(=^ ^=)<a href="">快去选购吧！</a></div>
+                                		<div>亲(=^ ^=)<a href="index.html">快去选购吧！</a></div>
                                 	</div>
                                 	
                                 </li>
@@ -397,7 +403,7 @@ $(function(){
         <div class="headerlogo">
                <div class="mid">
                      <div class="logo">
-                             <h1 title=""><a href="#"><img src="img/logo1.png"></a></h1>
+                             <h1 title=""><a href="index.html"><img src="img/logo1.png"></a></h1>
                              
                      </div>
                      <div class="search">

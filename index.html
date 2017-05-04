@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>无标题文档</title>
+<title>购玫！在最好的年华遇到你！</title>
 <link rel="stylesheet" type="text/css" href="font/font_8cnzodx1rzxjq0k9/iconfont.css">
 <link rel="stylesheet" type="text/css" href="font/font2/iconfont.css">
 <link rel="stylesheet" type="text/css" href="font/font3/iconfont.css">
@@ -132,14 +132,14 @@ form{overflow:hidden;}
         z-index:-10;
     }
     #prev,#next{
-        width:70px;
-        height: 50px;
+        /*width:70px;
+        height: 50px;*/
         line-height: 50px;
-        color: #fff;
-        font-size: 40px;
-        background: rgba(0,0,0,0.3);
+        color:rgba(255,255,255,.8);
+        font-size: 60px;
+        /*background: rgba(0,0,0,0.3);*/
         position: absolute;
-        top: 120px;
+        top: 190px;
         text-align: center;
         text-decoration: none;
         display: none;
@@ -148,16 +148,16 @@ form{overflow:hidden;}
         display: block;
     }
     #prev{
-        left: 0;
+        left:250px;
     }
     #next{
-        right: 0;
+        right:330px;
     }
     #list{
         position: absolute;
         bottom: 10px;
         width:250px;
-        right:40%;
+        right:45%;
     }
     #list li{
         width: 40px;
@@ -177,7 +177,7 @@ form{overflow:hidden;}
         height:430px;
     }
     #bannerFloatImg{position:absolute;top:0px;right:140px;z-index:20;}
-    #bannerFloatImg li{width:200px;height:140px;margin:0 0 5px 0;transition:.5s linear;}
+    #bannerFloatImg li{width:200px;height:140px;margin:0 0 5px 0;transition:.2s linear;}
     #bannerFloatImg li img{width:200px;height:140px;}
     #bannerFloatImg li:hover{transform: translateX(-20px);}
   
@@ -196,9 +196,11 @@ form{overflow:hidden;}
 
 </style>
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
 <script type="text/javascript">
 	
 $(function(){
+
 
 	$("#Lef2").mouseenter(function(){
 		$("#Lef2").css("background-color","#fff");
@@ -249,6 +251,17 @@ $(function(){
     });  
 
 
+
+
+
+  //回到顶部
+  	$("#gohome").click(function(){
+		$("html,body").animate({scrollTop: 0}, 500);	
+	});
+    $("#home").click(function(){
+		$("html,body").animate({scrollTop: 0}, 500);	
+	});
+  
 });
 
 
@@ -263,8 +276,8 @@ $(function(){
 						<div id="photoImg1"><img src="img/banner-vaseflower.jpg" alt="" /></div>
 						<ul class="clear">
 							<li>你好！请</li>
-							<li><a href="">登录　|</a></li>
-							<li><a href="">注册</a></li>
+							<li><a href="logIn.html">登录　|</a></li>
+							<li><a href="reg.html">注册</a></li>
 						</ul>
 					</div>
 					<div id="box2">
@@ -273,7 +286,7 @@ $(function(){
 					</div>
 				</div>
 			</li>
-			<li id="B2"><a href="" class="iconfont fon">&#x344b;<e id="tip">购物车</e><span id="buySum">0</span></a></li>
+			<li id="B2"><a href="shoppingCar.html" class="iconfont fon">&#x344b;<e id="tip">购物车</e><span id="buySum">0</span></a></li>
 			<li id="B3"><a href="" class="iconfont fon">&#xf0054;</a>
 				<div><a href="">我的关注</a></div>
 			</li>
@@ -301,7 +314,7 @@ $(function(){
 				</div>
 				
 			</li>
-			<li><a href="" class="iconfont fon">&#xf012c;</a>
+			<li><a id="gohome" class="iconfont fon">&#xf012c;</a>
 				<div id="home">
 					返回顶部
 				</div>
@@ -329,8 +342,8 @@ $(function(){
                  	    	</li>
                  	     </ul> 
                          <ul class="u1">
-                                <li class="l1"><a href="#">您好！请登录</a></li>
-                                <li class="l2"><a href="#">注册</a></li>
+                                <li class="l1"><a id="showUserName" href="logIn.html">您好！请登录</a></li>
+                                <li class="l2"><a href="reg.html">注册</a></li>
                                 <li class="l3"><a href="#">订单查询</a></li>
                                 <li class="l7"><a href="#">我的购玫</a></li>
                                 <li class="l4"><a href="#">客户服务<div class="sj"></div></a>
@@ -344,9 +357,9 @@ $(function(){
                             		</ul>
                                 		
                                 </li>
-                                <li class="l5"><a href="#"><i class="iconfont fon">&#xf003f;</i>购物车<div class="sj"></div></a>
+                                <li class="l5"><a href="shoppingCar.html"><i class="iconfont fon">&#xf003f;</i>购物车<div class="sj"></div></a>
                                 	<div id="shoppingBord">
-                                		<div>亲(=^ ^=)<a href="">快去选购吧！</a></div>
+                                		<div>亲(=^ ^=)<a href="index.html">快去选购吧！</a></div>
                                 	</div>
                                 	
                                 </li>
@@ -570,7 +583,7 @@ $(function(){
                         <div class="b2">
                                <ul>
                                        <li class="l1"><a href="#">鲜花</a></li>
-                                       <li><a href="#">永生花</a></li>
+                                       <li><a href="sonPage.html">永生花</a></li>
                                        <li><a href="#">蛋糕</a></li>
                                        <li><a href="#">礼品</a></li>
                                        <li><a href="#">巧克力</a></li>
@@ -607,8 +620,8 @@ $(function(){
   	     	</ul>
    	     </div>
         <!--跳转按钮-->
-        <a id="prev" href="#">&lt;</a>
-        <a id="next" href="#">&gt;</a>
+        <a id="prev" href="#" class="iconfont fon">&#xf0115;</a>
+        <a id="next" href="#" class="iconfont fon">&#xf0116;</a>
         <!--滑动条-->
         <ul id="list">
             <li class="active"></li>
@@ -653,7 +666,7 @@ $(function(){
 				</li>
 				<li>
 					<div><img src="img/hua8.jpg" alt="" /></div>
-					<a href="">鲜花·一心一意  ¥126</a>
+					<a href="goodsDetail.html">鲜花·一心一意  ¥126</a>
 				</li>
 				<li>
 					<div><img src="img/hua9.jpg" alt="" /></div>
@@ -1038,6 +1051,11 @@ $(function(){
 </body>
 </html>
 <script type="text/javascript">
+window.onload=function(){
+    var getUser=getCookie("userName");
+	//alert(getUser);
+    document.getElementById("showUserName").innerHTML=getUser;
+}
 function temp(str){
 				return document.getElementById(str);
 			}

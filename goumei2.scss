@@ -70,14 +70,14 @@
 
 #sideBarR{
     
-    margin:180px 0 0 0;
+    margin:120px 0 0 0;
     a{
         color:rgba(255,255,255,.9);
         font-size:20px;
     }
     li{
         padding:10px 7px;
-        
+  
     }
     li:hover{
         background: #e40202;
@@ -207,6 +207,7 @@
         width:100%;
         padding:10px 0 10px 6px;
         position:relative;
+        cursor: pointer;
     }
     li:hover{
         background:#e40202;
@@ -221,7 +222,6 @@
       }     
     }
     a{
-      ;
         font-size:20px;
         color:#fff;
     }
@@ -289,7 +289,9 @@
     width:1200px;
     margin:0 auto;
 
-
+    #minTitle{
+        padding:20px 0;
+    }
     #titl{
        
         li{

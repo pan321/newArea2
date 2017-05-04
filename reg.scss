@@ -207,6 +207,7 @@ footer{
                     font-family:"微软雅黑";
                     margin-left:60px;
                     outline:none;
+                    cursor: pointer;
                 }
                 input[type="submit"]:hover{
                     background:#ce0202;
@@ -271,7 +272,7 @@ footer{
                          img{
                              float:left;
                              margin-right:0px;
-                             height:30px;
+                             height:100%;
                          }
                      }
                 }

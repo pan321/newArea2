@@ -2,12 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>登录购玫！</title>
+<title>购物车--购玫</title>
 <link rel="stylesheet" type="text/css" href="font/font_8cnzodx1rzxjq0k9/iconfont.css">
 <link rel="stylesheet" type="text/css" href="font/font2/iconfont.css">
 <link rel="stylesheet" type="text/css" href="font/font3/iconfont.css">
 
-<link rel="stylesheet" type="text/css" href="css/logIn.css">
+<link rel="stylesheet" type="text/css" href="css/shoppingCar.css">
 <style>
 body,html{width:100%;font-family:Microsoft Yahei;overflow-X:hidden;}
 img{border:0;display:block;}
@@ -62,7 +62,7 @@ em,i,b,strong{font-style:normal;font-weight:normal;}
 
 
 /*---------------------以上为头部样式------------------------*/
-.headerlogo{height:77px;width:100%;border-bottom:1px solid #f7f5f6;}
+.headerlogo{height:77px;width:100%;margin-bottom:30px;}
 .logo{height:77px;width:540px;}
 .logo a,p{float:left;font-size:18px;}
 .logo a img{border:none;height:70px;}
@@ -112,7 +112,6 @@ form{overflow:hidden;}
 
 </style>
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
-<script type="text/javascript" src="js/cookieTools.js"></script>
 <script type="text/javascript">
 	
 $(function(){
@@ -174,49 +173,31 @@ $(function(){
     	$("#log").css("border-bottom","2px solid #ccc");
     });
 
-    var isTrue=true;
-
-/*    
-     $("#userName").blur(function(){
-		var reg=/^1\d{10}$/;
-		var str=$("#userName").val();
+     
+     
+     var isTrue=true;
+     $("#userPass").blur(function(){
+		var reg=/^[0-9a-zA-Z]{6,20}$/;
+		var str=$("#userPass").val();
 		if(reg.test(str)==true){
-			$("#showUser").html("&#xe6ad;");
-			$("#showUser").css("color","green");
+			isTrue=true;
+			$("#showPass").html("&#xe6ad;");
+			$("#showPass").css("color","green");
 			}else{
-			$("#showUser").html("&#xe69a;");
-			$("#showUser").css("color","red");	
-				}
-	});*/
+			isTrue=false;	
+			$("#showPass").html("&#xe69a;");	
+			$("#showPass").css("color","red");
+			}
+		}
+     );
+	
 
-/*    $("#userName").blur(function(){
-		var reg=/^\w+@\w+\.(com|cn|com\.cn|net)$/;
-		var str=$("Email").val();
-		if(reg.test(str)==true){
-			$("#showUser").html("&#xe6ad;");
-			$("#showUser").css("color","green");
-			}else{
-			$("#showUser").html("&#xe69a;");
-			$("#showUser").css("color","red");			
-				}
-	});*/
 	if(isTrue){
 		$("#userName").blur(function(){
 			//邮箱： ****@***.com；开始是数字字母下划线@开始是数字字母下划线.com或者net或者cn
 			var reg = /^\w+@\w+\.(com|net|cn|com\.cn)$/;
 			var regs=/^1\d{10}$/;
-			var str= $("#userName").val();	
-			
-            $.get("exist.php",{"userName":$("#userName").val()},function(data){
-	         	if(data=="0"){
-	         		$("#logBtn").click(function(event){
-	         			event.preventDefault();
-	         		});	         		
-	         		isTrue=false;
-	         	}
-            });
-			
-			
+			var str= $("#userName").val();			
 			if(reg.test(str)||regs.test(str)){
 				$("#showUser").html("&#xe6ad;");
 				$("#showUser").css("color","green");
@@ -225,48 +206,86 @@ $(function(){
 				$("#showUser").html("&#xe69a;");
 				$("#showUser").css("color","red");
 			}
-			
-	   });
-		
+	});
 	}
-	$("#userPass").blur(function(){
-		var reg=/^[0-9a-zA-Z]{6,20}$/;
-		var str=$("#userPass").val();
-		
-		if(reg.test(str)==true){
-			isTrue=true;
-			$("#showPass").html("&#xe6ad;");
-			$("#showPass").css("color","green");
-			}else{
-				isTrue=false;
-			$("#showPass").html("&#xe69a;");	
-			$("#showPass").css("color","red");
-				}
-		}
-    );
-    $("#logBtn").click(function(){
-    	if(isTrue){
-    		$.get("log.php",{"userName":$("#userName").val(),"userPass":$("#userPass").val()},function(data){
-    			//alert(data);
-    			if(data=="1"){
-    				saveCookie("userName",$("#userName").val(),1);
-    				location.href="index.html";
-                    
-    			}else{
-    				$("#showPass").html("&#xe69a;");	
-			        $("#showPass").css("color","red");
-    			}
-    		});
+	
+   if(isTrue){
+   	  $("#surePassWord").blur(function(){
+	  var PSS1=$("#userPass").val();
+	  var PSS2=$("#surePassWord").val();
+	  if(PSS1==PSS2){
+		    $("#showSurePass").html("&#xe6ad;");
+			$("#showSurePass").css("color","green");
+		  }else{
+		  	isTrue=false;
+			$("#showSurePass").html("&#xe69a;");	
+			$("#showSurePass").css("color","red");
+			  }
+	  }); 
+   }
+    
+
+ /*--------------------------------------确认密码*/
+     $("#regBtn").click(function(){
+     	 if(isTrue){
+     	 	  $.post("reg.php",{"userName":$("#userName").val(),"userPass":$("#userPass").val()},function(data){
+     	 	  	//alert(data);
+     	 	  	if(data=="1"){
+     	 	  		location.href="index.html";
+     	 	  	   }
+     	 	  });
+     	 }else{
+     	 	 alert("请确认输入信息！");
+     	 }
+     });
+     $("#userName").blur(function(){
+         $.get("exist.php",{"userName":$("#userName").val()},function(data){
+         	if(data=="1"){
+         		alert("该用户名已存在！");
+         		isTrue=false;
+         	}else{
+         		
+         	}
+         });
+     });
+   
+    $("#others li").click(function(){
+    	$("#others li").css({"height":"19px","margin-top":"0px"});
+    	$(this).css({"height":"23px","margin-top":"-3px"});
+    	
+    });
+    $("#others").mouseenter(function(){
+    	$("#othBtnL").animate({"opacity":"1"},400);
+    	$("#othBtnR").animate({"opacity":"1"},400);
+    });
+  
+    $("#others").mouseleave(function(){
+    	$("#othBtnL").animate({"opacity":"0"},400);
+    	$("#othBtnR").animate({"opacity":"0"},400);
+    });  
+    
+    var countL=-179;
+    $("#othBtnL").click(function(){
+    	$("#boxWrap1Ul").animate({left:countL+'px'},400);
+    	countL+=-179;
+    	if(countL<-895){
+    		countL=-179
     	}
     });
+   
+     var countR=179;
+    $("#othBtnR").click(function(){   	
+    	
+    	if(countR>0){
+    		countR=-895;
+    	}
+    	$("#boxWrap1Ul").animate({left:countR+'px'},400);
+    	countR+=179;
+    }); 
+  
 
   
 });
-
-
-
-
-
 
 
 </script>
@@ -292,8 +311,8 @@ $(function(){
                  	    	</li>
                  	     </ul> 
                          <ul class="u1">
-                                <li class="l1"><a id="showUserName" href="#">您好！请登录</a></li>
-                                <li class="l2"><a href="reg.html">注册</a></li>
+                                <li class="l1"><a href="logIn.html">您好！请登录</a></li>
+                                <li class="l2"><a href="#">注册</a></li>
                                 <li class="l3"><a href="#">订单查询</a></li>
                                 <li class="l7"><a href="#">我的购玫</a></li>
                                 <li class="l4"><a href="#">客户服务<div class="sj"></div></a>
@@ -344,31 +363,112 @@ $(function(){
           
 </div>	
 
-<div id="logInBack">
-
-	<div id="login">
-	    <div id="con"> 
-		     <ul id="chos" class="clear">
-		     	<li id="log"><a href="">登录</a></li>
-		     	<li id="reg"><a href="reg.html">注册</a></li>
-		     	<li id="emptyBox1"></li>
-		     </ul>
-		     <div id="changeLog" class="clear"><a href="">使用手机验证码登录</a></div>
-		     <div id="user" class="clear"><div class="iconfont fon">&#xe62e;</div><input id="userName" type="text" value="" name="user" placeholder=" E-mail地址/手机号码"/><span  id="showUser" class="iconfont fon"></span></div>
-		     <div id="pass" class="clear"><div class="iconfont fon">&#xf0109;</div><input id="userPass" type="password" value="" name="pass" placeholder=" 用户密码"/><span id="showPass" class="iconfont fon"></span></div>
-		     <div id="forgetPass" class="clear"><a href="">忘记密码</a></div>
-             <div id="sub" class="clear"><input type="submit" id="logBtn" value="登  录"/></div> 
-             <ul id="tools" class="clear">
-             	<li><a href="">微信　|</a></li>
-             	<li><a href="">QQ　|</a></li>
-             	<li><a href="">支付宝 </a></li>
-             </ul>
-	    </div>     
+<div id="shoppingCont">
+	<span id="noneShopping"><a href="index.html">购物车啥也没有！快去选购吧！</a></span>
+	<div id="sumMoney" class="clear">
+		<div id="showSumMoney" class="clear">
+			<div id="continueShop" class="iconfont fon">
+			     <a href="index.html">&#xf016f;　继续挑选</a>
+			</div>
+			<div id="payFor">
+				<span>
+					应付金额：
+					<em id="countMoney"> ¥0 </em>
+				</span>
+			</div>
+		</div>
+		<input type="button" id="sumBtn" value="去结算">
 	</div>
-	
-	
-	
+	<div id="others">
+		<ul class="clear">
+			<li>购买该商品的还购买了</li>
+			<li>最近浏览</li>
+			<li>巧克力/鲜花</li>
+		</ul>
+		<div id="card">
+			<em id="othBtnL" class="iconfont fon">&#xf0115;</em>
+			<i id="othBtnR" class="iconfont fon">&#xf0116;</i>
+			<div id="boxWrap1">
+				 <ul id="boxWrap1Ul" class="clear">
+				 	<li>
+				 		<img src="img/smallcake9.jpg" alt="" />
+				 		<a href="">顺丰包邮/热款畅销/送女友表白</a>
+				 		<h5>¥128</h5>
+				 		<input type="button" value="加入购物车"/>
+				 	</li>
+				 	<li>
+				 		<img src="img/gift1.jpg" alt="" />
+				 		<a href="">顺丰包邮/热款畅销/送女友表白</a>
+				 		<h5>¥228</h5>
+				 		<input type="button" value="加入购物车"/>
+				 	</li>
+				 	<li>
+				 		<img src="img/gift2.jpg" alt="" />
+				 		<a href="">顺丰包邮/热款畅销/送女友表白</a>
+				 		<h5>¥258</h5>
+				 		<input type="button" value="加入购物车"/>
+				 	</li>
+				 	<li>
+				 		<img src="img/gift7.jpg" alt="" />
+				 		<a href="">顺丰包邮/热款畅销/送女友表白</a>
+				 		<h5>¥78</h5>
+				 		<input type="button" value="加入购物车"/>
+				 	</li>
+				 	<li>
+				 		<img src="img/gift4.jpg" alt="" />
+				 		<a href="">顺丰包邮/热款畅销/送女友表白</a>
+				 		<h5>¥158</h5>
+				 		<input type="button" value="加入购物车"/>
+				 	</li>
+				 	<li>
+				 		<img src="img/gift3.jpg" alt="" />
+				 		<a href="">顺丰包邮/热款畅销/送女友表白</a>
+				 		<h5>¥238</h5>
+				 		<input type="button" value="加入购物车"/>
+				 	</li>
+				 	<li>
+				 		<img src="img/gift6.jpg" alt="" />
+				 		<a href="">顺丰包邮/热款畅销/送女友表白</a>
+				 		<h5>¥128</h5>
+				 		<input type="button" value="加入购物车"/>
+				 	</li>
+				 	<li>
+				 		<img src="img/gift5.jpg" alt="" />
+				 		<a href="">顺丰包邮/热款畅销/送女友表白</a>
+				 		<h5>¥198</h5>
+				 		<input type="button" value="加入购物车"/>
+				 	</li>
+				 	<li>
+				 		<img src="img/gift8.jpg" alt="" />
+				 		<a href="">顺丰包邮/热款畅销/送女友表白</a>
+				 		<h5>¥258</h5>
+				 		<input type="button" value="加入购物车"/>
+				 	</li>
+				 	<li>
+				 		<img src="img/gift9.jpg" alt="" />
+				 		<a href="">顺丰包邮/热款畅销/送女友表白</a>
+				 		<h5>¥120</h5>
+				 		<input type="button" value="加入购物车" onclick="goShopping"/>
+				 	</li>
+				 </ul>
+			</div>
+		</div>
+	</div>	
+	<ul id="publicPraise" class="clear">
+		<li><img src="img/title5.png" alt="" /></li>
+		<li><img src="img/title4.png" alt="" /></li>
+		<li><img src="img/title3.png" alt="" /></li>
+		<li id="lastPub"><img src="img/title2.png" alt="" /></li>
+	</ul>
 </div>
+
+
+
+
+
+
+
+
 
 <div id="main">
 
@@ -427,6 +527,10 @@ $(function(){
 </body>
 </html>
 <script type="text/javascript">
+
+
+
+
 
 
 
