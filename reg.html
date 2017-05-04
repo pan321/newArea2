@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>无标题文档</title>
+<title>注册购玫！享受不一样的生活</title>
 <link rel="stylesheet" type="text/css" href="font/font_8cnzodx1rzxjq0k9/iconfont.css">
 <link rel="stylesheet" type="text/css" href="font/font2/iconfont.css">
 <link rel="stylesheet" type="text/css" href="font/font3/iconfont.css">
@@ -173,34 +173,40 @@ $(function(){
     	$("#log").css("border-bottom","2px solid #ccc");
     });
 
-
-    $("#userPass").blur(function(){
+     
+     
+     var isTrue=true;
+     $("#userPass").blur(function(){
 		var reg=/^[0-9a-zA-Z]{6,20}$/;
 		var str=$("#userPass").val();
 		if(reg.test(str)==true){
+			isTrue=true;
 			$("#showPass").html("&#xe6ad;");
 			$("#showPass").css("color","green");
 			}else{
+			isTrue=false;	
 			$("#showPass").html("&#xe69a;");	
 			$("#showPass").css("color","red");
-				}
+			}
 		}
-    );
+     );
     
-/*    
+ /* 	
      $("#userName").blur(function(){
 		var reg=/^1\d{10}$/;
 		var str=$("#userName").val();
 		if(reg.test(str)==true){
+			isTrue=true;
 			$("#showUser").html("&#xe6ad;");
 			$("#showUser").css("color","green");
 			}else{
+				isTrue=false;
 			$("#showUser").html("&#xe69a;");
 			$("#showUser").css("color","red");	
 				}
-	});*/
+	});
 
-/*    $("#userName").blur(function(){
+ /*   $("#userName").blur(function(){
 		var reg=/^\w+@\w+\.(com|cn|com\.cn|net)$/;
 		var str=$("Email").val();
 		if(reg.test(str)==true){
@@ -211,34 +217,64 @@ $(function(){
 			$("#showUser").css("color","red");			
 				}
 	});*/
-	$("#userName").blur(function(){
+	
+
+	if(isTrue){
+		$("#userName").blur(function(){
 			//邮箱： ****@***.com；开始是数字字母下划线@开始是数字字母下划线.com或者net或者cn
 			var reg = /^\w+@\w+\.(com|net|cn|com\.cn)$/;
+			var regs=/^1\d{10}$/;
 			var str= $("#userName").val();			
-			if(reg.test(str)){
+			if(reg.test(str)||regs.test(str)){
 				$("#showUser").html("&#xe6ad;");
 				$("#showUser").css("color","green");
 			}else{
+				isTrue=false;
 				$("#showUser").html("&#xe69a;");
 				$("#showUser").css("color","red");
 			}
 	});
-   
-    $("#surePassWord").blur(function(){
+	}
+	
+   if(isTrue){
+   	  $("#surePassWord").blur(function(){
 	  var PSS1=$("#userPass").val();
 	  var PSS2=$("#surePassWord").val();
 	  if(PSS1==PSS2){
 		    $("#showSurePass").html("&#xe6ad;");
 			$("#showSurePass").css("color","green");
 		  }else{
+		  	isTrue=false;
 			$("#showSurePass").html("&#xe69a;");	
 			$("#showSurePass").css("color","red");
 			  }
-	});
+	  }); 
+   }
+    
 
  /*--------------------------------------确认密码*/
-
-   
+     $("#regBtn").click(function(){
+     	 if(isTrue){
+     	 	  $.post("reg.php",{"userName":$("#userName").val(),"userPass":$("#userPass").val()},function(data){
+     	 	  	//alert(data);
+     	 	  	if(data=="1"){
+     	 	  		location.href="index.html";
+     	 	  	   }
+     	 	  });
+     	 }else{
+     	 	 alert("请确认输入信息！");
+     	 }
+     });
+     $("#userName").blur(function(){
+         $.get("exist.php",{"userName":$("#userName").val()},function(data){
+         	if(data=="1"){
+         		alert("该用户名已存在！");
+         		isTrue=false;
+         	}else{
+         		
+         	}
+         });
+     });
    
   
 });
@@ -333,7 +369,7 @@ $(function(){
 		     <div id="pass" class="clear"><div class="iconfont fon">&#xf0109;</div><input id="userPass" type="password" value="" name="pass" placeholder=" 密码"/><span id="showPass" class="iconfont fon"></span></div>
              <div id="surePass" class="clear"><div class="iconfont fon">&#xf0109;</div><input id="surePassWord" type="password" value="" name="pass" placeholder=" 请再次输入密码"/><span id="showSurePass" class="iconfont fon"></span></div>
              <div id="checkCodeByNum"><input type="text" id="securityCode" onblur="isTrue()" placeholder=" 验证码"/><div id="checkImg" class="clear"></div><input type="button" id="btn1" value="换一组" onclick="randomImage()"/><span id="showRight" class="iconfont fon" style="font-size:30px;"></span></div>
-             <div id="sub" class="clear"><input type="submit" value="注  册"/></div> 
+             <div id="sub" class="clear"><input id="regBtn" type="submit" value="注  册"/></div> 
 
 	    </div>     
 	</div>
